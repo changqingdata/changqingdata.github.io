@@ -1,0 +1,15 @@
+/* 渐变背景样式 */
+body {
+  background: linear-gradient(to bottom right, #f0f9ff, #fdfbff, #f5f5f5);
+  background-attachment: fixed; /* 背景固定 */
+  background-size: cover; /* 背景覆盖整个屏幕 */
+}
+
+
+
+
+/* 设置页脚背景为渐变色 */
+footer {
+  background: linear-gradient(to bottom right, #f0f9ff, #fdfbff, #f5f5f5);
+}
+
