@@ -1324,7 +1324,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: clamp(14px, 2.5vw, 20px);
+  --global-font-size: clamp(15px, 2.5vw, 20px);
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -1659,7 +1659,7 @@ figure.highlight pre .javascript .function {
 }
 .container pre,
 .container code {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Courier New', monospace !important;
   border-radius: 6px;
 }
@@ -1689,7 +1689,7 @@ figure.highlight pre .javascript .function {
 .container figure.highlight figcaption,
 .container figure.highlight .caption {
   padding: 6px 0 2px 14px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1em;
 }
 .container figure.highlight figcaption a,
@@ -1734,7 +1734,7 @@ figure.highlight pre .javascript .function {
   height: 2.15em;
   background: var(--hltools-bg);
   color: var(--hltools-color);
-  font-size: 14px;
+  font-size: 15px;
   overflow: hidden;
 }
 .container .highlight-tools > * {
@@ -3329,12 +3329,12 @@ figure.highlight pre .javascript .function {
   content: '';
 }
 #page-header.full_page {
-  height: 300px;
+  height: 400px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: 150px;
   padding: 0 10px;
   width: 100%;
 }
