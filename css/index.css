@@ -10693,7 +10693,7 @@ h1.page-title + .tag-cloud-list {
   transition: 0.3s;
 }
 #page-header.full_page {
-  height: 400px;
+  height: 850px;
   background-attachment: fixed;
   border-radius: 0;
 }
@@ -10704,7 +10704,7 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site-info {
   position: absolute;
-  top: 43%;
+  top: 20px;
   padding: 0 10px;
   width: 100%;
 }
