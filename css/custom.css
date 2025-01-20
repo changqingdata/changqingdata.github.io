@@ -1,3 +1,62 @@
 .site-title {
     display: none !important;
 } 
+
+/* 增大文章正文字体 */
+#article-container {
+    font-size: 22px;  /* 从20px增加到22px */
+}
+
+/* 增大文章标题大小 */
+#article-container h1 {
+    font-size: 32px !important;
+}
+
+#article-container h2 {
+    font-size: 30px !important;
+}
+
+#article-container h3 {
+    font-size: 28px !important;
+}
+
+#article-container h4 {
+    font-size: 26px !important;
+}
+
+#article-container h5 {
+    font-size: 24px !important;
+}
+
+#article-container h6 {
+    font-size: 22px !important;
+}
+
+/* 文章信息字号调整 */
+#post-info .post-title {
+    font-size: 4rem !important;  /* 增大文章标题 */
+}
+
+#post-info #post-meta {
+    font-size: 110% !important;  /* 增大元信息 */
+}
+
+.post-meta-categories a {
+    font-size: 1.1rem !important;  /* 增大分类标签 */
+}
+
+#post-firstinfo .meta-firstline {
+    font-size: 1.1rem !important;  /* 增大原创标记等信息 */
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    #post-info .post-title {
+        font-size: 2rem !important;
+    }
+    
+    #post-info #post-meta {
+        font-size: 100% !important;
+    }
+}
+
