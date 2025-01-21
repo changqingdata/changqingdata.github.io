@@ -166,25 +166,55 @@
   --nav-font-base: 22px;  /* 进一步增大基础字体大小 */
 }
 
-/* 导航栏独立效果和首页背景图适配 */
+/* 导航栏基础样式 */
 html body #page-header #nav {
-  background: rgba(255, 255, 255, 0.9) !important;  /* 调整为半透明白色背景 */
+  height: 75px !important;
+  background: var(--anzhiyu-card-bg);
+  transition: all .3s ease-in-out;
+}
+
+/* 主页导航栏特殊效果 */
+html body #page-header.full_page #nav.nav-fixed {
+  background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: saturate(180%) blur(20px) !important;
   -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
   box-shadow: 0 8px 16px -4px rgb(9 10 11 / 6%) !important;
   border-radius: 0 0 12px 12px !important;
   border-bottom: var(--style-border) !important;
-  transition: all .3s ease-in-out !important;
-  margin: 0 auto !important;
   position: fixed !important;
   width: 100% !important;
   z-index: 99 !important;
-  height: 75px !important;
+}
+
+/* 主页背景图显示调整 */
+html body #page-header.full_page {
+  height: 900px !important;
+}
+
+/* 主页站点信息位置 */
+html body #page-header.full_page #site-info {
+  top: 48px !important;
 }
 
 /* 导航栏文字和图标颜色统一设置 */
 html body #page-header #nav * {
-  color: #000 !important;  /* 统一设置为黑色 */
+  color: #000 !important;
+}
+
+/* 暗色模式适配 */
+[data-theme="dark"] #page-header.full_page #nav.nav-fixed {
+  background: rgba(40, 40, 40, 0.9) !important;
+}
+
+[data-theme="dark"] #page-header #nav * {
+  color: #fff !important;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  html body #page-header.full_page #nav.nav-fixed {
+    border-radius: 0 !important;
+  }
 }
 
 /* 导航栏hover效果 */
@@ -207,36 +237,6 @@ html body #page-header #nav .menus_items .menus_item .menus_item_child {
 html body #page-header #nav .menus_items .menus_item .menus_item_child li a:hover {
   background: var(--anzhiyu-main) !important;
   color: #fff !important;  /* hover时改为白色 */
-}
-
-/* 暗色模式适配 */
-[data-theme="dark"] #page-header #nav {
-  background: rgba(40, 40, 40, 0.9) !important;  /* 暗色模式背景色 */
-}
-
-[data-theme="dark"] #page-header #nav * {
-  color: #fff !important;  /* 暗色模式文字颜色 */
-}
-
-[data-theme="dark"] #page-header #nav .menus_items .menus_item .menus_item_child {
-  background: rgba(40, 40, 40, 0.9) !important;  /* 暗色模式子菜单背景色 */
-}
-
-/* 调整首页背景图显示 */
-html body #page-header.full_page {
-  height: 900px !important;
-  margin-top: 0 !important;
-  padding-top: 75px !important;      /* 调整为75px */
-}
-
-/* 调整首页站点信息位置 */
-html body #page-header.full_page #site-info {
-  top: 48px !important;  /* 设置为 index_site_info_top 的值 */
-}
-
-/* 非首页页面的内容区域上边距 */
-html body #page-header:not(.full_page) {
-  padding-top: 75px !important;      /* 调整为75px */
 }
 
 /* 主菜单项 */
@@ -273,27 +273,6 @@ html body #page-header #nav #page-name {
   line-height: 45px !important;      /* 调整行高 */
 }
 
-/* 移动端适配保持一致 */
-@media screen and (max-width: 768px) {
-  :root {
-    --nav-font-base: 18px;          /* 移动端字体也适当增大 */
-  }
-  
-  html body #page-header.full_page {
-    height: 900px !important;
-    padding-top: 75px !important;    /* 保持75px */
-  }
-  
-  html body #page-header:not(.full_page) {
-    padding-top: 75px !important;    /* 保持75px */
-  }
-  
-  html body #page-header #nav {
-    border-radius: 0 !important;
-    height: 75px !important;         /* 保持75px */
-  }
-}
-
 /* 中控台按钮样式调整 */
 html body #page-header #nav #center-console + label i {
   background: #000 !important;  /* 设置图标为黑色 */
@@ -312,39 +291,5 @@ html body #page-header #nav #center-console + label:hover i {
 /* 选中状态的样式 */
 html body #page-header #nav #center-console:checked + label i {
   background: #fff !important;  /* 选中状态为白色 */
-}
-
-/* 文章页面背景区域调整 */
-html body #page-header.post-bg {
-  height: 900px !important;  /* 与首页保持一致 */
-  margin-top: 0 !important;
-  padding-top: 75px !important;  /* 为导航栏预留空间 */
-}
-
-/* 文章页面信息位置调整 */
-html body #page-header.post-bg #post-info {
-  position: absolute;
-  padding: 0 8% !important;
-  width: 100% !important;
-  top: 48px !important;      /* 与首页站点信息位置保持一致 */
-}
-
-/* 文章顶部封面图调整 */
-html body #page-header.post-bg #post-top-cover {
-  height: 100% !important;
-  opacity: 0.8 !important;   /* 适当调整透明度 */
-  filter: blur(0px) !important;  /* 移除模糊效果 */
-}
-
-/* 移动端适配 */
-@media screen and (max-width: 768px) {
-  html body #page-header.post-bg {
-    height: 900px !important;  /* 保持与PC端一致 */
-    padding-top: 75px !important;
-  }
-  
-  html body #page-header.post-bg #post-info {
-    padding: 0 5% !important;  /* 移动端边距适当缩小 */
-  }
 }
 
