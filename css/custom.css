@@ -4,33 +4,36 @@
 
 /* 增大文章正文字体 */
 #article-container {
-    font-size: 22px;  /* 从20px增加到22px */
+    font-size: 20px;  /* 从20px增加到22px */
 }
 
 /* 增大文章标题大小 */
 #article-container h1 {
-    font-size: 32px !important;
+    font-size: 42px !important;
 }
 
 #article-container h2 {
-    font-size: 30px !important;
+    font-size: 38px !important;
 }
 
 #article-container h3 {
-    font-size: 28px !important;
+    font-size: 34px !important;
 }
 
 #article-container h4 {
-    font-size: 26px !important;
+    font-size: 30px !important;
 }
 
 #article-container h5 {
-    font-size: 24px !important;
+    font-size: 28px !important;
 }
 
 #article-container h6 {
-    font-size: 22px !important;
+    font-size: 24px !important;
 }
+
+
+
 
 /* 文章信息字号调整 */
 #post-info .post-title {
