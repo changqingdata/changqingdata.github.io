@@ -63,3 +63,101 @@
     }
 }
 
+
+
+
+[data-theme="light"] #footer {
+  background: linear-gradient(180deg, var(--anzhiyu-card-bg-none) 0%, var(--anzhiyu-card-bg) 25%);
+}
+
+[data-theme="light"] #footer-wrap {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-bar {
+  background: var(--anzhiyu-card-bg);
+  color: var(--light-grey);
+}
+
+/* 添加以下新的样式 */
+[data-theme="light"] #footer-wrap a {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap .footer-item {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap .footer-title {
+  color: var(--anzhiyu-secondtext);
+}
+
+[data-theme="light"] #footer_deal .deal_link {
+  color: var(--anzhiyu-card-bg);
+  background: var(--light-grey);
+}
+
+[data-theme="light"] #footer_deal .deal_link:hover {
+  color: var(--anzhiyu-white);
+  background: var(--anzhiyu-main);
+}
+
+[data-theme="light"] #footer-wrap .footer-title-group i {
+  color: var(--anzhiyu-secondtext);
+}
+
+/* 页脚列表样式 */
+[data-theme="light"] #footer-wrap #anzhiyu-footer {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap #anzhiyu-footer .footer-group {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap #anzhiyu-footer .footer-title {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap #anzhiyu-footer .footer-links {
+  color: var(--light-grey);
+}
+
+[data-theme="light"] #footer-wrap #anzhiyu-footer .footer-item {
+  color: var(--light-grey);
+}
+
+/* 页脚链接hover效果 */
+[data-theme="light"] #footer-wrap #anzhiyu-footer .footer-item:hover {
+  color: var(--anzhiyu-white);
+}
+
+/* 页脚分隔符颜色 */
+[data-theme="light"] #footer-wrap .footer-separator {
+  color: var(--light-grey);
+}
+
+/* 页脚图标颜色 */
+[data-theme="light"] #footer-wrap i {
+  color: var(--light-grey);
+}
+
+/* 页脚版权信息颜色 */
+[data-theme="light"] #footer-wrap .copyright {
+  color: var(--light-grey);
+}
+
+/* 页脚框架信息颜色 */
+[data-theme="light"] #footer-wrap .framework-info {
+  color: var(--light-grey);
+}
+
+/* 页脚所有链接的颜色 */
+[data-theme="light"] #footer-wrap a {
+  color: var(--light-grey) !important;
+}
+
+[data-theme="light"] #footer-wrap a:hover {
+  color: var(--anzhiyu-white) !important;
+}
+
