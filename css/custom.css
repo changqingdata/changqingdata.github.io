@@ -4,7 +4,7 @@
 
 /* 增大文章正文字体 */
 #article-container {
-    font-size: 18px;  /* 从20px增加到22px */
+    font-size: 20px;  /* 默认桌面端字体大小 */
 }
 
 /* 增大文章标题大小 */
@@ -60,6 +60,10 @@
     
     #post-info #post-meta {
         font-size: 100% !important;
+    }
+    
+    #article-container {
+        font-size: 16px;  /* 移动端较小字体 */
     }
 }
 
