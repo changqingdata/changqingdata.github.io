@@ -63,7 +63,7 @@
     }
     
     #article-container {
-        font-size: 16px;  /* 移动端较小字体 */
+        font-size: 17px;  /* 移动端较小字体 */
     }
 }
 
@@ -278,9 +278,9 @@ html body #page-header.post-bg.nav-fixed #nav {
   color: #fff !important;
 }
 
-/* 导航栏文字和图标颜色统一设置 */
-html body #page-header #nav * {
-  color: #000 !important;
+/* 导航栏文字和图标颜色统一设置 - 只针对主页 */
+html body #page-header.full_page #nav * {
+    color: #000 !important;  /* 只在主页设置黑色 */
 }
 
 /* 导航栏hover效果 */
@@ -357,5 +357,80 @@ html body #page-header #nav #center-console + label:hover i {
 /* 选中状态的样式 */
 html body #page-header #nav #center-console:checked + label i {
   background: #fff !important;  /* 选中状态为白色 */
+}
+
+/* Footer QR Code 样式 */
+.footer-qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    background: #000;  /* 设置纯黑色背景 */
+    width: 100%;       /* 确保宽度占满 */
+}
+
+.qrcode-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;  /* 增加最大宽度，让文字有更多空间 */
+    flex: 1;           /* 让每个item平均分配空间 */
+}
+
+.qrcode-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.qrcode-item img:hover {
+    transform: translateY(-5px);
+}
+
+.qrcode-item .qrcode-text {
+    color: var(--light-grey);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: justify;  /* 文字两端对齐 */
+    width: 100%;          /* 确保文字宽度与容器一致 */
+}
+
+/* 修改底部背景 */
+#footer {
+    background: #000 !important;  /* 强制使用纯黑色背景 */
+    position: relative;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .footer-qrcode {
+        gap: 30px;
+        padding: 20px 15px;
+    }
+    
+    .qrcode-item {
+        max-width: 100%;
+    }
+    
+    .qrcode-item img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .qrcode-item .qrcode-text {
+        font-size: 0.85rem;
+        padding: 0 15px;
+    }
 }
 
