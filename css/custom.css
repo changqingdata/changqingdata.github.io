@@ -365,14 +365,14 @@ html body #page-header #nav #center-console:checked + label i {
     justify-content: center;
     align-items: flex-start;
     gap: 60px;
-    padding: 40px 20px;
+    padding: 50px 20px 10px;  /* 上50px 左右20px 下20px */
     margin: 0 auto;
     max-width: 1200px;
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    background: #000;  /* 设置纯黑色背景 */
-    width: 100%;       /* 确保宽度占满 */
+    background: #000;
+    width: 100%;
 }
 
 .qrcode-item {
@@ -380,7 +380,7 @@ html body #page-header #nav #center-console:checked + label i {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 500px;  /* 增加最大宽度，让文字有更多空间 */
+    max-width: 530px;  /* 增加最大宽度，让文字有更多空间 */
     flex: 1;           /* 让每个item平均分配空间 */
 }
 
@@ -388,7 +388,7 @@ html body #page-header #nav #center-console:checked + label i {
     width: 180px;
     height: 180px;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;  /* 增加到18px的间距 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -399,24 +399,28 @@ html body #page-header #nav #center-console:checked + label i {
 
 .qrcode-item .qrcode-text {
     color: var(--light-grey);
-    font-size: 0.9rem;
+    font-size: 1rem;          /* 使用 1rem 作为基准字体大小 */
     line-height: 1.6;
     padding: 0 20px;
-    text-align: justify;  /* 文字两端对齐 */
-    width: 100%;          /* 确保文字宽度与容器一致 */
+    text-align: justify;
+    width: 100%;
 }
 
-/* 修改底部背景 */
+/* 修改底部背景和内边距 */
 #footer {
-    background: #000 !important;  /* 强制使用纯黑色背景 */
+    background: #000 !important;
     position: relative;
+}
+
+#footer-wrap {
+    padding: 20px 20px 50px !important;  /* 上20px 左右20px 下50px */
 }
 
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
     .footer-qrcode {
         gap: 30px;
-        padding: 20px 15px;
+        padding: 50px 15px 20px;  /* 保持与桌面端一致：上50px 左右15px 下20px */
     }
     
     .qrcode-item {
@@ -429,8 +433,64 @@ html body #page-header #nav #center-console:checked + label i {
     }
     
     .qrcode-item .qrcode-text {
-        font-size: 0.85rem;
+        font-size: 0.95rem;    /* 移动端稍微小一点 */
         padding: 0 15px;
+    }
+
+    #footer-wrap {
+        padding: 20px 15px 20px !important;  /* 保持与桌面端一致：上20px 左右15px 下50px */
+    }
+}
+
+/* AnZhiYu Footer 样式调整 */
+#anzhiyu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;  /* 内边距 */
+    max-width: 1200px;  /* 最大宽度 */
+    margin: 0 auto;  /* 居中显示 */
+}
+
+/* Footer 分组样式 */
+#anzhiyu-footer .footer-group {
+    margin-bottom: 16px;  /* 分组之间的间距 */
+    min-width: 120px;  /* 最小宽度 */
+}
+
+/* Footer 标题样式 */
+#anzhiyu-footer .footer-title {
+    color: var(--light-grey);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Footer 链接样式 */
+#anzhiyu-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#anzhiyu-footer .footer-item {
+    color: var(--light-grey);
+    font-size: 0.9rem;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+#anzhiyu-footer .footer-item:hover {
+    color: var(--theme-color);  /* 鼠标悬停颜色 */
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    #anzhiyu-footer {
+        padding: 15px;
+    }
+    
+    #anzhiyu-footer .footer-group {
+        width: 45%;  /* 移动端两列布局 */
     }
 }
 
