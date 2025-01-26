@@ -494,3 +494,116 @@ html body #page-header #nav #center-console:checked + label i {
     }
 }
 
+/* 移动端头图和文字适配 */
+@media screen and (max-width: 768px) {
+    /* 调整移动端头图高度 */
+    html body #page-header.full_page {
+        height: 640px !important;
+        position: relative;
+    }
+
+    /* 调整移动端副标题容器整体位置和样式 */
+    #page-header #site-info {
+        padding: 0 8px;  /* 从12px减小到8px */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 650px;
+    }
+
+    /* 调整移动端副标题文字大小和样式 */
+    #site-info .site-subtitle {
+        font-size: 1rem !important;
+        margin: 10px 0;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 6em;
+    }
+}
+
+/* 针对超小屏幕的额外优化 */
+@media screen and (max-width: 480px) {
+    html body #page-header.full_page {
+        height: 540px !important;
+    }
+
+    #page-header #site-info {
+        padding: 0 6px;  /* 从10px减小到6px */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #site-info .site-subtitle {
+        font-size: 0.95rem !important;
+        -webkit-line-clamp: 3;
+        max-height: 4.5em;
+    }
+}
+
+/* 确保移动端文字可读性 */
+#page-header #site-info {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;  /* 确保文字在最上层 */
+}
+
+/* 优化背景图片显示 */
+#page-header {
+    transition: height 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;  /* 防止内容溢出 */
+}
+
+/* 添加背景渐变提升文字可读性 */
+#page-header.full_page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+    z-index: 0;
+}
+
+/* 移动端文字间距优化 */
+@media screen and (max-width: 768px) {
+    /* 调整段落间距 */
+    #page-header #site-info p[style*="margin-bottom"] {
+        margin-bottom: 5px !important;  /* 进一步减小段落间距 */
+        line-height: 1.1 !important;    /* 减小行高 */
+    }
+    
+    /* 调整标题下方间距 */
+    #page-header #site-info h1[style*="margin-bottom"] {
+        margin-bottom: 6px !important;  /* 减小标题下方间距 */
+    }
+
+    /* 调整按钮上方间距 */
+    #page-header #site-info div[style*="margin-top"] {
+        margin-top: 8px !important;     /* 减小按钮上方间距 */
+    }
+}
+
+/* 超小屏幕进一步优化 */
+@media screen and (max-width: 480px) {
+    #page-header #site-info p[style*="margin-bottom"] {
+        margin-bottom: 4px !important;  /* 更小屏幕进一步减小间距 */
+        line-height: 1.1 !important;    /* 保持较小的行高 */
+    }
+    
+    #page-header #site-info h1[style*="margin-bottom"] {
+        margin-bottom: 5px !important;
+    }
+
+    #page-header #site-info div[style*="margin-top"] {
+        margin-top: 6px !important;
+    }
+}
+
