@@ -530,7 +530,7 @@ html body #page-header #nav #center-console:checked + label i {
 /* 针对超小屏幕的额外优化 */
 @media screen and (max-width: 480px) {
     html body #page-header.full_page {
-        height: 540px !important;
+        height: 640px !important;
     }
 
     #page-header #site-info {
