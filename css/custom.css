@@ -9,27 +9,27 @@
 
 /* 增大文章标题大小 */
 #article-container h1 {
-    font-size: 38px !important;
+    font-size: 36px !important;
 }
 
 #article-container h2 {
-    font-size: 34px !important;
-}
-
-#article-container h3 {
     font-size: 32px !important;
 }
 
-#article-container h4 {
+#article-container h3 {
     font-size: 30px !important;
 }
 
-#article-container h5 {
+#article-container h4 {
     font-size: 28px !important;
 }
 
-#article-container h6 {
+#article-container h5 {
     font-size: 26px !important;
+}
+
+#article-container h6 {
+    font-size: 24px !important;
 }
 
 
@@ -413,7 +413,7 @@ html body #page-header #nav #center-console:checked + label i {
 }
 
 #footer-wrap {
-    padding: 20px 20px 50px !important;  /* 上20px 左右20px 下50px */
+    padding: 20px 20px 35px !important;  /* 上20px 左右20px 下50px */
 }
 
 /* 移动端适配 */
@@ -652,12 +652,12 @@ html body #page-header #nav #center-console:checked + label i {
 @media screen and (max-width: 480px) {
     /* 调整标题大小 */
     #page-header #site-info h1 {
-        font-size: 2em !important;  /* 更小屏幕进一步减小 */
+        font-size: 1.9em !important;  /* 更小屏幕进一步减小 */
     }
 
     /* 调整段落文字大小 */
     #page-header #site-info p {
-        font-size: 1.2em !important;  /* 更小屏幕进一步减小 */
+        font-size: 1.1em !important;  /* 更小屏幕进一步减小 */
     }
 }
 
