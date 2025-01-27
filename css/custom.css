@@ -591,7 +591,7 @@ html body #page-header #nav #center-console:checked + label i {
     }
 }
 
-/* 超小屏幕进一步优化 */
+/* 手机端进一步优化 */
 @media screen and (max-width: 480px) {
     #page-header #site-info p[style*="margin-bottom"] {
         margin-bottom: 2px !important;  /* 从4px减小到2px */
@@ -639,12 +639,12 @@ html body #page-header #nav #center-console:checked + label i {
 @media screen and (max-width: 768px) {
     /* 调整标题大小 */
     #page-header #site-info h1 {
-        font-size: 2em !important;  /* 从2.5em减小到2em */
+        font-size: 2.3em !important;  /* 从2.5em减小到2em */
     }
 
     /* 调整段落文字大小 */
     #page-header #site-info p {
-        font-size: 1.1em !important;  /* 从1.3em减小到1.1em */
+        font-size: 1.3em !important;  /* 从1.3em减小到1.1em */
     }
 }
 
@@ -652,12 +652,12 @@ html body #page-header #nav #center-console:checked + label i {
 @media screen and (max-width: 480px) {
     /* 调整标题大小 */
     #page-header #site-info h1 {
-        font-size: 1.8em !important;  /* 更小屏幕进一步减小 */
+        font-size: 2em !important;  /* 更小屏幕进一步减小 */
     }
 
     /* 调整段落文字大小 */
     #page-header #site-info p {
-        font-size: 1em !important;  /* 更小屏幕进一步减小 */
+        font-size: 1.2em !important;  /* 更小屏幕进一步减小 */
     }
 }
 
