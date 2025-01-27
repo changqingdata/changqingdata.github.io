@@ -498,7 +498,7 @@ html body #page-header #nav #center-console:checked + label i {
 @media screen and (max-width: 768px) {
     /* 调整移动端头图高度 */
     html body #page-header.full_page {
-        height: 640px !important;
+        height: 650px !important;
         position: relative;
     }
 
@@ -515,7 +515,7 @@ html body #page-header #nav #center-console:checked + label i {
 
     /* 调整移动端副标题文字大小和样式 */
     #site-info .site-subtitle {
-        font-size: 1rem !important;
+        font-size: 1 rem !important;
         margin: 10px 0;
         line-height: 1.5;
         display: -webkit-box;
@@ -530,7 +530,7 @@ html body #page-header #nav #center-console:checked + label i {
 /* 针对超小屏幕的额外优化 */
 @media screen and (max-width: 480px) {
     html body #page-header.full_page {
-        height: 640px !important;
+        height: 650px !important;
     }
 
     #page-header #site-info {
@@ -576,34 +576,62 @@ html body #page-header #nav #center-console:checked + label i {
 @media screen and (max-width: 768px) {
     /* 调整段落间距 */
     #page-header #site-info p[style*="margin-bottom"] {
-        margin-bottom: 5px !important;  /* 进一步减小段落间距 */
-        line-height: 1.1 !important;    /* 减小行高 */
+        margin-bottom: 2px !important;  /* 从5px减小到3px */
+        line-height: 1.3 !important;    /* 保持行高1.1 */
     }
     
     /* 调整标题下方间距 */
     #page-header #site-info h1[style*="margin-bottom"] {
-        margin-bottom: 6px !important;  /* 减小标题下方间距 */
+        margin-bottom: 4px !important;  /* 从6px减小到4px */
     }
 
     /* 调整按钮上方间距 */
     #page-header #site-info div[style*="margin-top"] {
-        margin-top: 8px !important;     /* 减小按钮上方间距 */
+        margin-top: 2px !important;     /* 从8px减小到6px */
     }
 }
 
 /* 超小屏幕进一步优化 */
 @media screen and (max-width: 480px) {
     #page-header #site-info p[style*="margin-bottom"] {
-        margin-bottom: 4px !important;  /* 更小屏幕进一步减小间距 */
-        line-height: 1.1 !important;    /* 保持较小的行高 */
+        margin-bottom: 2px !important;  /* 从4px减小到2px */
+        line-height: 1.2 !important;    /* 保持行高1.1 */
     }
     
     #page-header #site-info h1[style*="margin-bottom"] {
-        margin-bottom: 5px !important;
+        margin-bottom: 3px !important;  /* 从5px减小到3px */
     }
 
     #page-header #site-info div[style*="margin-top"] {
-        margin-top: 6px !important;
+        margin-top: 1px !important;     /* 从6px减小到4px */
+    }
+}
+
+/* 移动端调整site-subtitle上边距 */
+@media screen and (max-width: 768px) {
+    #page-header #site-info {
+        margin: 25px auto !important;  /* 调整移动端上边距为30px */
+    }
+}
+
+/* 超小屏幕保持相同的上边距 */
+@media screen and (max-width: 480px) {
+    #page-header #site-info {
+        margin: 25px auto !important;
+    }
+}
+
+/* 移动端按钮位置调整 */
+@media screen and (max-width: 768px) {
+    #page-header #site-info a[href="/about/"] {
+        margin-top: 20px !important;  /* 从50px减小到20px */
+    }
+}
+
+/* 超小屏幕保持相同设置 */
+@media screen and (max-width: 480px) {
+    #page-header #site-info a[href="/about/"] {
+        margin-top: 30px !important;
     }
 }
 

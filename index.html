@@ -12,7 +12,7 @@
   preloader: {"source":3},
   friends_vue_info: {"apiurl":null},
   navMusic: false,
-  mainTone: {"mode":"both","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  mainTone: {"mode":"both","api":"https://img2color-go.vercel.app/api?img=","cover_change":false},
   authorStatus: {"skills":null},
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-01-27 09:26:58',
+  postUpdate: '2025-01-27 10:43:31',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -386,14 +386,14 @@ queueMicrotask(() => {
 }</script><script>function subtitleType () {
   if (false) { 
     window.typed = new Typed("#subtitle", {
-      strings: ["<div style=\"text-align: left; width: 100%; max-width: 1400px; margin: 20px auto; padding: 0 40px; height: 760px; display: flex; flex-direction: column; justify-content: center;\"> <h1 style=\"font-size: 2.5em; margin-bottom: 15px; color: #ffffff !important; font-weight: bold;\">Hey，我是常青。</h1> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;\">我热衷于创造、开拓我身上的潜在天赋、才华，将生命的价值释放到极致。</p> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;\">我会，用一生的时间，去体验、发现、创造；以开源自我的方式，向宇宙万物发送我的频率！</p> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;\">你会在这里，收获到关于个人成长的一切干货！</p> <div style=\"display: flex;\"> <a href=\"/about/\" style=\"display: inline-block; background-color: rgba(99, 85, 199, 0.8); color: #ffffff !important; padding: 8px 20px; border-radius: 25px; text-decoration: none; margin-top: 20px; transition: all 0.3s ease; white-space: nowrap;\">点击了解老常 →</a> </div> </div>"],
+      strings: ["<div style=\"text-align: left; width: 100%; max-width: 1400px; margin: 20px auto; padding: 0 40px; height: 760px; display: flex; flex-direction: column; justify-content: center;\"> <h1 style=\"font-size: 2.5em; margin-bottom: 15px; color: #ffffff !important; font-weight: bold;\">Hey，我是常青。</h1> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;\">我热衷于创造、开拓我身上的潜在天赋、才华，将生命的价值释放到极致。</p> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;\">我会，用一生的时间，去体验、发现、创造；以开源自我的方式，向宇宙万物发送我的频率！</p> <p style=\"font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;\">你会在这里，收获到关于<strong style=\"font-weight: bold; color: #ffffff;\">个人成长</strong>的一切<strong style=\"font-weight: bold; color: #ffffff;\">干货</strong>！</p> <div style=\"display: flex;\"> <a href=\"/about/\" style=\"display: inline-block; background-color: rgba(99, 85, 199, 0.8); color: #ffffff !important; padding: 8px 20px; border-radius: 25px; text-decoration: none; margin-top: 50px; transition: all 0.3s ease; white-space: nowrap;font-weight: bold;\">点击了解老常 →</a> </div> </div>"],
       startDelay: 300,
       typeSpeed: 150,
       loop: true,
       backSpeed: 50
     })
   } else {
-    document.getElementById("subtitle").innerHTML = '<div style="text-align: left; width: 100%; max-width: 1400px; margin: 20px auto; padding: 0 40px; height: 760px; display: flex; flex-direction: column; justify-content: center;"> <h1 style="font-size: 2.5em; margin-bottom: 15px; color: #ffffff !important; font-weight: bold;">Hey，我是常青。</h1> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;">我热衷于创造、开拓我身上的潜在天赋、才华，将生命的价值释放到极致。</p> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;">我会，用一生的时间，去体验、发现、创造；以开源自我的方式，向宇宙万物发送我的频率！</p> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important; font-weight: bold;">你会在这里，收获到关于个人成长的一切干货！</p> <div style="display: flex;"> <a href="/about/" style="display: inline-block; background-color: rgba(99, 85, 199, 0.8); color: #ffffff !important; padding: 8px 20px; border-radius: 25px; text-decoration: none; margin-top: 20px; transition: all 0.3s ease; white-space: nowrap;">点击了解老常 →</a> </div> </div>'
+    document.getElementById("subtitle").innerHTML = '<div style="text-align: left; width: 100%; max-width: 1400px; margin: 20px auto; padding: 0 40px; height: 760px; display: flex; flex-direction: column; justify-content: center;"> <h1 style="font-size: 2.5em; margin-bottom: 15px; color: #ffffff !important; font-weight: bold;">Hey，我是常青。</h1> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;">我热衷于创造、开拓我身上的潜在天赋、才华，将生命的价值释放到极致。</p> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;">我会，用一生的时间，去体验、发现、创造；以开源自我的方式，向宇宙万物发送我的频率！</p> <p style="font-size: 1.3em; margin-bottom: 13px; line-height: 1.2; color: #ffffff !important;">你会在这里，收获到关于<strong style="font-weight: bold; color: #ffffff;">个人成长</strong>的一切<strong style="font-weight: bold; color: #ffffff;">干货</strong>！</p> <div style="display: flex;"> <a href="/about/" style="display: inline-block; background-color: rgba(99, 85, 199, 0.8); color: #ffffff !important; padding: 8px 20px; border-radius: 25px; text-decoration: none; margin-top: 50px; transition: all 0.3s ease; white-space: nowrap;font-weight: bold;">点击了解老常 →</a> </div> </div>'
   }
 }
 
