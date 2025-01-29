@@ -1,3 +1,3 @@
-var posts=["2024/12/03/hello-world/","2025/01/17/万字干货！手把手带你根除手机&短视频成瘾？ - 副本 - 副本/","2025/01/17/万字干货！手把手带你根除手机&短视频成瘾？ - 副本/","2024/12/16/万字干货！手把手带你根除手机&短视频成瘾？/"];function toRandomPost(){
+var posts=["posts/1243066710.html","posts/4234593951.html","posts/2710847249.html"];function toRandomPost(){
     window.location.href='/'+posts[Math.floor(Math.random() * posts.length)];
   };
