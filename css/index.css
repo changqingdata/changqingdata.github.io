@@ -22263,7 +22263,7 @@ body[data-type="essay"] #web_bg {
 }
 #bber .timeline ul li.bber-item {
   position: relative;
-  width: 32%;
+  width: 100%;
   border: var(--style-border-always);
   border-radius: 12px;
   padding: 1rem 1rem 0.5rem;
@@ -22274,7 +22274,8 @@ body[data-type="essay"] #web_bg {
   align-items: flex-start;
   background: var(--anzhiyu-card-bg);
   box-shadow: var(--anzhiyu-shadow-border);
-  margin-right: 2%;
+  margin-right: 0;
+  margin-bottom: 1rem;
 }
 #bber .timeline #waterfall.show {
   opacity: 1;
@@ -22457,7 +22458,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 }
 
 /* 响应式 */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   #bber .timeline ul li.bber-item {
     width: 49%;
     margin-right: 1%;
@@ -22468,7 +22469,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
     width: 100%;
     margin-right: 0px;
   }
-}
+} */
 [data-theme="dark"] #bber .bber-music .aplayer,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {
