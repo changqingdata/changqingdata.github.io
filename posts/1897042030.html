@@ -1,0 +1,709 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>手把手教你打造一套最牛的知识笔记管理系统！ | 常青</title><meta name="keywords" content="笔记方法,知识管理"><meta name="author" content="常青"><meta name="copyright" content="常青"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="手把手教你打造一套最牛的知识笔记管理系统！"><meta name="application-name" content="手把手教你打造一套最牛的知识笔记管理系统！"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="手把手教你打造一套最牛的知识笔记管理系统！"><meta property="og:url" content="https://www.changqing.fun/posts/1897042030.html"><meta property="og:site_name" content="常青"><meta property="og:description" content="阅读提示：1.文章大约1W多字，相当长，内容非常硬核，所以读起来不会很轻松，甚至有些烧脑，需要你集中注意力，不建议碎片化时间阅读。 2.本文是一套完整的知识体系，文章不会上来就直接扔你一个解决方案，而是会从『是什么』和『为什么』开始，告诉你前因后果后，最后才会告诉你怎么去做。 3.建议先点赞收藏，以"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif"><meta property="article:author" content="常青"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif"><meta name="description" content="阅读提示：1.文章大约1W多字，相当长，内容非常硬核，所以读起来不会很轻松，甚至有些烧脑，需要你集中注意力，不建议碎片化时间阅读。 2.本文是一套完整的知识体系，文章不会上来就直接扔你一个解决方案，而是会从『是什么』和『为什么』开始，告诉你前因后果后，最后才会告诉你怎么去做。 3.建议先点赞收藏，以"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://www.changqing.fun/posts/1897042030.html"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png"},
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:{"enable":true,"maxBarrage":1,"barrageTime":4000,"accessToken":"","mailMd5":""},
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":null},
+  navMusic: false,
+  mainTone: {"mode":"both","api":"https://img2color-go.vercel.app/api?img=","cover_change":false},
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 常青","link":"链接: ","source":"来源: 常青","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '常青',
+  title: '手把手教你打造一套最牛的知识笔记管理系统！',
+  postAI: '',
+  pageFillDescription: '阅读提示：, 正文, 什么是知识管理系统？, 为什么你必须要建立外脑？, 如何建立外脑？, 三：规则化信息——给外脑立结构、给笔记立规矩。, 四：部署索引体系统, 打造完毕后最重要的事情是什么？, 文章到这里就结束了下面我们把上面的内容总结一下！！！, 精进书单推荐：, 最后, 我还有其他好文你也许感兴趣~阅读提示文章大约多字相当长内容非常硬核所以读起来不会很轻松甚至有些烧脑需要你集中注意力不建议碎片化时间阅读本文是一套完整的知识体系文章不会上来就直接扔你一个解决方案而是会从是什么和为什么开始告诉你前因后果后最后才会告诉你怎么去做建议先点赞收藏以供随时翻阅新开公号啦关注常青说第一时间收到干货正文什么是知识管理系统我们先不回答这个问题直接上个场景假如你床头有本书你要在其中找到一本书你会怎么找你可能会说扫一眼就找到了啊但是假如你现在身处世界上最大的图书馆美国国会图书馆藏书超亿本现在你想在里边找到某一本书请问你如何找一本一本翻吗累死你亿这个数字我给大家换算了一下把亿本书铺起来可绕地球近两圈不仅仅找书图书馆每天还要在其中处理上千万次的查询借书还书入库仅凭人脑是没有办法处理这么大的信息量的那么图书馆的管理人员是如何解决这些问题的当让是靠着一套管理系统让一切规律化规则化系统化把人解放出来如果没有这套管理系统试想怎么样同理我们的知识管理系统就相当于这个图书管理系统而知识就如同这一本本图书当有了套系统去管理它们以后我们就相当于拥有了另外的一个大脑如此就可以把我们大脑不擅长的东西全部扔给这个外脑让它帮助我们记忆整理等等为什么你必须要建立外脑大脑是用来思考的不是用来记忆的记忆尤其是死记硬背是最反人性的进化论告诉我们大脑只会记住最能帮助我们生存的信息至于无关紧要的它为了节省脑力资源会尽可能的忘记它们同样的大脑也只能处理眼下的小部分信息而面对大量信息处理的时候大脑就会罢工我们平常用脑的时候感觉思绪乱头昏脑涨就是因为大脑处理的信息已经超过了它的负荷大脑的机制天生就不是为了记忆和处理大量信息而设计的但是在现实生活中我们又需要处理和记住很多信息和知识点以便使用的时候可以随用随取那应该怎么办呢当然是建立外脑前面说了我们大脑不擅长的记忆和大规模信息管理但这却是我们外脑所擅长的我们的大脑会遗忘但是外脑它永远也不会忘的你建立的这个外脑就会和你的大脑形成互补各发挥其所长正如上面的图书管理案例我们不需要记住每本书的信息我们想要的时候只要知道怎么从图书管理系统中找到它们即可所以想发挥大脑真正的威力就把它从记忆中解放出来让它去思考而不是让它去记忆有同学看到这里可能会抬杠有必要弄这么一个外脑吗我大脑就够用了啊当你只想做个撸瑟的时候觉得这辈子能搬个砖扛个水泥就够了那么你就可以离开了因为你确实没有这个需求但是你想获得不断成长要获得更强的能力想要在社会的激烈竞争中有足够的竞争力你的知识储备必然需要被扩大这种情况下你要靠脑子记忆吗回想你上学的生涯就知道了那是多么痛的领悟正如上文案例你只有十本书的时候当然不需要建立外脑想要啥扫一眼就够了但是当你有本本一百万一个亿本的时候呢以上只是我们必须建立外脑的一个理由之一除此之外还有一个更重要的理由外脑是为了帮助大脑更好的记住有逻辑关系的知识你用的时候才能想起来为什么会这样说呢同样我们先不回答这个问题给你来个小测试现在思考一下我让你说水果的名字你看看你能说出多少个水果你可能会说这有什么难的苹果香蕉梨橘子火龙果西瓜但是你发现越往下你思考的时间就越长越说不出来你可以先暂停阅读试试那么我再换一个问题请告诉如西红柿炒鸡蛋怎么做你可能想都不用想直接就可以脱口而出准备食材洗菜切菜爆锅开炒为什么会这样因为前者大脑索引的是一个点一个点的信息后者索引的一整个结构一整套流程一整张知识的网你看点状的东西被大脑索引是很困难的但是有逻辑有结构的东西则不同后者一索引就是一大片一整个体系当你把点状的知识编织成一张网后它们就会形成你的思维模型这样你用的时候才能想起来很多人抱怨学过的东西用不出来反思一下从小到大你调用你知识储备的时候是不是都像是上面想水果一样想到哪是哪你整理过你的知识吗你的知识是成结构的吗你脑中有这么一张庞大的知识结构网吗而把知识打入外脑的过程就是在编织你这张网所以建立外脑的本质就是体系化你知识的过程啰里八嗦了那么多想必你已经知道建立外脑的重要性了那么如何建立外脑呢如何建立外脑整个外脑是由两个系统构成第一个是储存笔记的系统第二个则是索引笔记的系统你可以理解成一个放一个拿这里知道有这么个东西即可后文会展开介绍而整个外脑的搭建可以归纳为三步走第一步把收集知识有序的装进去第二步把知识整理好设立规则以供随时提用第三步用的时候可以迅速的把需要的知识拿出来整篇文章的核心下面一张图就概括了但是为了让你彻底搞定这件事我会掰开了揉碎了一步步手把手带你搭出你的知识管理系统下面我们先从搭建储存体入手从零开始搭建整个外脑系统一选择外脑载体一台能正常跑的电脑系统前提就是主机显示屏这些硬件载体你操作系统再牛逼没有主机你也跑不起来同理我们的外脑的搭建也是如此所以建立外脑的第一步就是找到外脑的载体即存放我们知识的工具那么市面上提供给我们现成的外脑载体都有哪些呢太多太多了主流的有道云笔记印象笔记等都可以作为我们外脑的载体它们各有优缺点想详细了解的同学请自行了解我这里就不展开了大家凭借喜好选择总之都是现成的任君选择我本人的外脑载体为有道云笔记下文演示均以此笔记做案例其他载体同理当我们确定了大脑的载体以后呢建立几个文件夹后就开始一顿操作猛如虎类似下面这样的吗这样的外脑系统有什么问题呢层次结构混乱这样长长的列下来我不知道你头大没有别说提取了我单单看到这一串头就先大一圈了因为这样混乱的结构含糊其辞的目录会让你翻看这些东西的时候对这种凌乱有一种厌恶感提取困难混乱的内容会让真正用的时候找不到所有的笔记如果用的时候找不到或者需要很大的功夫才能找到那这个外脑系统就没多大意义了当你笔记内容少的时候你还能记得那是哪但是当大到一定量级了呢你的外脑一定会崩溃知识碎片化以上所建立的文件夹之间都是割裂的笔记与笔记间连接不起来我们在文章开始的时候就说了外脑的作用除了帮我们承担记忆的负担还有一项职能就是辅助我们大脑为我们建立起知识体系如果你的笔记之间都是一个个散乱的点那么外脑的意义就要被砍掉一半一句话来说上面的那些都不是一个好的外脑因为它并没有解决我们为什么建立外脑的本质问题那么什么是好的外脑呢知识结构体系化笔记与笔记间的知识点不分散不是乱七八糟的不是碎片化的方便管理看到不头大结构清晰一目了然提取方便高效最好高效到如同探囊取物想到就能秒拿到如果这一点满足不了找一个想要的信息要半天那么这套系统就没有多少意义好了到了这里你知道了一个好的外脑的标准随着而来的一个问题就是如何才能让你的外脑达成以上标准那么如何让外脑满足以上条件呢正如电脑的系统一样装上了我们就无需用乱七八糟反人性的命令去让计算机工作所有的一切都有序的跑在这套清爽的图形化系统之上同理想让外脑不乱你必须部署一套规则化的操作系统让我们的知识笔记全部跑在这套管理系统之上保证底盘不乱根基稳而不是随性而建所以找到载体之后不是一顿操作猛如虎而是要给我们的外脑装上一个类似一样的底层系统而我们这套跑在外脑载体上的系统就是系统所以我们建立外脑的第二步就是给它装上这套系统二部署操作系统什么是系统的英文全称是这是由著名的时间管理人戴维艾伦在他的著作尽管去做里提出的一套移动硬盘式的任务管理方法它的核心精髓是把所有待办任务都从大脑里移出去清空大脑用外部的工具去管理任务让大脑的全部资源都用来思考而又不会遗漏任何一件事部署了系统在笔记本上我们就可以借助的工作流不仅拥有了知识管理系统而且还把我们的日程管理系统也都囊括其中了极大幅度的解放了我们的大脑如何部署系统到笔记本上工作流总共有个步骤收集厘清整理归档回顾而把它用到我们的外脑上就变成了信息管理流同样也是五个步骤信息流收集箱等待处理将来可能归档资料专题研究下面分别介绍一下我们设置的这五个文件夹可以干什么收集箱这个就相当于你在各大平台点的收藏比如我们拿手机刷到好文了比如这篇文章哈我们就可以把各大平台的好文一键集中扔到这个收集箱中这个东西的作用就是负责收集你不必操心该放到那个分类所有的好东西一股脑扔进去就了这样就可以大幅度的解放我们分类归类的时间等到了一个固定的时间比如晚上统一处理这样既不打断我们当前手头的事情同时又确保了收藏的文件不会乱七八糟又能让你认真的评估和精读这篇文章确保进入你笔记的都是精品等待处理这个文件夹承载我们当天的日程备忘录记事本沉思录日记本等等你应该有体会大脑凭记忆力处理这些事情有多坑爹我们就可以把这些事情交给外脑处理把日程待办事项等全部移到这个文件夹里把这些事情全部从大脑中清理出去想知道接下来要做什么事情直接来翻这个文件夹效率高的飞起将来可能这里主要承载计划规划想法点子类的东西比如你看到了一个点子发现了一个项目你就可以先把它扔到这里作为你的灵感库归档资料这个是我们的知识的大本营最终所有的信息和笔记都会被归入到这个文件夹中我们收集到的信息通过整理完毕以后就放入这里以供随手复习和使用的时候随时调取专题研究比如我最近对唱歌比较感兴趣那么我就可以单独这专题这里建立一个文件夹专门服务于唱歌当研究出成果了再把它归入到归档资料中当你在你的笔记本上创建了这个个文件夹后你的系统就部署完成了你看部署了通过来处理信息后你的外脑是不是特别有层次感是不是感觉外脑像是有了灵魂一样而不是类似于上面那四个笔记长长的一串那么部署完系统后就完了吗当然不是完成了最底层系统的搭建我们就要开始去处理输入进来的笔记了前面说了最终所有的笔记都会被汇总归档到归档资料这个文件夹之中所以我们管理笔记的核心就在此文件夹中但是那么多的笔记怎么去管理啊还是像上面图中那四个案例一样列出长长的一串文件夹吗下面我们进入本文的第三个模块来解决以上问题三规则化信息给外脑立结构给笔记立规矩我们都知道无规矩不成方圆如果归入进来的笔记没有规则那就会乱七八糟完全没效率可言所以我们必须要给输入进来的笔记进行处理教给它们规矩让它们变得清晰有规律只有这样你提取它的时候才能迅速找到你想要的但是要设立那些规矩呢如何设立呢下面提供四大原则保证让你的笔记规规矩矩的最简层原则什么是最简层原则所谓最简层原则就是让文件夹尽可能的少层级尽可能的少因为只有数量少你看起来才不会头大如果还是一层又一层的文件夹那就和前面你看到的那四张笔记没啥差别了那么如何才能尽可能的少呢当然是找一个可以把所有东西都包括进来的维度它符合之前文章提到的原则既涵盖了所有笔记特性又不遗漏同时又不冗长我这里就提供给你一个这样的维度以笔记的用处这一个维度进行划分即学习工作生活你可以随便想从用处来论任何笔记都不会逃过这个三个分类的所以它是符合的我们就以它作为划分知识的标准作为归档资料的打底文件夹这样我们就实现了最简层打底文件夹有了我们就需要根据自己的需求对文件夹做一些进一步细分但如果你还是建立一串文件夹整个笔记体系必然会乱那么如何管理下一级的文件夹呢这就用到了让你笔记规矩的第二个原则目录编码原则什么是目录编码原则你可以先思考下这个问题一本书有那么多的知识点它是怎么排版才让内容清晰一目了然的当然是把图书知识结构整理成目录按照层次编码啊如下图这样你看起来结构就会非常清晰一目了然同理我们对文件夹的层级管理同样采用这种方式让文件夹的层级与层级之间建立起逻辑关系那如何目录编码呢这里不进行赘述我给你做了一张图扫一眼估计你就会了除了建立起清晰的逻辑层次外为什么你一定要用目录编码因为有了目录编码后笔记就能实现自动排序笔记本一般都是按照名称排序的比如数字在数字前面字母在字母前面如此就会非常有序可参考微信好友目录哈如果你没给它这样规则化命名则会出现乱序情况会让笔记看起来乱七八糟的但如果你设置了编码就能实现自动排序非常爽啊所以我们采用图书目录编码一箭双雕不仅让结构逻辑层次清晰而且还能实现自动排序以上我们说了让你笔记规矩的四个原则的前两个原则有了它们可以让你的笔记结构层次有了一个质的提升但仅仅是层次清晰还远远不够想要你的笔记规矩你还需要第三个原则统一命名原则什么是统一命名的原则即无论是文件夹还是笔记本身都要遵循一套标准的命名原则只有这样你的笔记才不会乱切记把笔记命名成这样的无格式笔记一旦养成这样的习惯后期会让你有一种想锤死你自己的感觉相信我那么用什么标准命名呢怎么命名下面我给出三个方法让你解决这个问题用黄金圈法则命名文件夹你学习的任何一个知识点或专题都逃不过黄金圈的终极三问即是什么为什么如何做比如你想研究演讲的话题那么你就可以创建三个文件夹什么是演讲演讲为什么要学习和训练演讲演讲如何训练演讲演讲当你创建了这个三个文件夹后你就可以把演讲相关的所有知识点按照黄金圈分出的三个文件夹分别归属如此每个文件夹对应啥内容一眼望穿你看三个文件夹解决一切而且看起来是那么的清晰那么的一目了然笔记文件规范化命名上面讲的是文件夹的命名方法这里则是具体到的某个笔记文件命名这里也没有太多可讲的我给你做了一张图提供了一个公式你看一眼就秒懂了规则化命名效果示范你看这样的笔记标题命名和上图的两小人那张笔记标题命名那个看起来让人爽意义不明的层坚决不要还有很多同学会建一个其他的文件夹请问你这个其他是什么你之所以建这个其他就是因为你也搞不通某个笔记文件属于那个类别了不好分类的所幸一股脑的扔到这里边我告诉你你在用的时候是根本不会去翻其他这个分类的因为它在你脑中就没有啥概念你都不知道你放了些啥应该放些啥又怎么能指望提取的时候找到呢所以这种意义不明的层坚决不要到了这里你知道了让笔记规矩的三个原则但是仅仅知道以上三个原则还不能让它们很规矩想要他们更规矩一些你还需要第四个原则标签化原则什么是标签化原则以及为什么要用标签去管理我们的笔记我先不回答这个问题给你出道小题假如让你给伟人归类你会把毛爷爷归到哪一类你会把毛爷爷归到政治家思想家军事家抱歉这些头衔毛爷爷都占了你看你是没有办法把他按单一的维度归类的如果你单一的把毛爷爷归到一个分类中比如诗人那么搜索其他分类就找不到毛爷爷了那你就把毛爷爷给定住在某个分类中了这样做就是有漏的同理我们再来看个案例你会把前两年大火的战狼归到什么分类中你能对它进行单一归类吗我们之前的文章中讲维度的时候就已经说了任何一件事物都可以有很多个维度如果你把某事物按照一个维度归类你就相当于把它给定死了同理我们的知识依旧如此你笔记里的知识大部分都被你给定死了很多人的笔记之所以没有效率用的时候找不到很大的原因就是你把知识给限定死了比如你学到了一个写作技巧如何煽情如果你单纯的把这个技巧归入到写小说这个分类中只有写小说的时候你才会想起它那么这个这个知识点就让你学死了因为这个技巧完全可能套用到写文案写报告等等那么如何解决这个问题呢这就回答了上面为什么要用标签来管理笔记了的问题了打标签就是为解决这个问题设置的你可以给一个知识点打上无数个标签当你搜索任何一个标签维度的时候都能够索引到这个知识点正如上面案例中只要你给毛爷爷打上了标签无论你搜家都能找到毛爷爷而战狼中你搜索商业片也能找到它搜索战争片也能找到它搜索吴京也能找到它如此我们就不用纠结于某个知识点具体该归入储存体的那个文件夹中无论是你放到那只要标签打上了就不用担心索引问题当你部署了一系列标签的时候你的知识就活了比如记忆这个标签当你想要这个标签的内容的时候云笔记就会帮助你把所有这个被你标记过这个标签的文章给找出来无论它是你过去的读书笔记或者是电视剧看到的演讲听到的课程中学到的总之只要包含这个标签的一股脑的都会给你抓出来供你调遣使用下面给你展示一下我是如何给一个课程打标签的好了看到这里你可能会说完成以上部署笔记的整体效率是高了很多知识也给盘活了但是以上知识之间仍然是割裂的笔记与笔记间仍然形成不了体系而且笔记量和标签一多标签本身也就乱了都不知道标签那个是哪个了那如何解决这一系列问题呢下面我们就进入本文的最后一个模块部署索引体让你的外脑的效率彻底飞起来四部署索引体系统什么是储存体和索引体系统储存体就是我们以上忙活的那都是在部署储存体的系统即在文件夹里的那一套我们前面说了我们通过标签调取笔记或信息而索引体系统就是把标签与标签之间也建立起逻辑关系形成体系和结构最后内化成我们的知识体系一句话解释储存体用于管理文件夹的系统而索引体则用于管理标签的系统为了让两者更有辨识度文件夹系统作为储存体识别符号标签系统作为索引体识别符如何搭建索引体底层系统搭建储存体有作为底层操作系统那么索引体同样也应该有操作系统作为分类索引体的分类规则就是我们前文说的学习工作生活三个分类因为你笔记上所有的东西都逃不过这三点它是符合的工作和生活的分类我这里不多介绍因为这个体系不体系无所谓大家按照自己的喜好打标签即可这里主要介绍的是学习因为这才是承载我们知识标签的大本营我们所有的知识标签都以这个分类为底那么在学习这个分类底下应该怎么去构建知识架构呢一个维度分类所有知识标签体系的构成一定有底层分类作为支撑的所以想要把零散的标签编织成系统就需要对他们进行分类那么从作用的维度你会把所有的知识标签分成哪几类可能每个人都有自己的标准我本人按照和参考了儒家的最高理想把一个人的一生所有的知识分成了四类即修身的知识齐家的知识治国的知识平天下的知识哈哈比较中二不过我看着很顺眼这个分类仅供参考如果你也觉得这个维度不错可以直接拿去用好了有了这个维度你就可以把你在储存体里打上的标签按照这四个维度分门别类的整理在这里边即可我截取一段我索引体系统中的整理效果供大家参考你可以看出来当索引体逐渐完善以后它就是一套完整清晰的知识体系区别符号你可能看到索引体中每个对象的前面都有个符号有的符号是有的符号是这是什么意思呢这两个符号是区别符号前面有的说明它是标签而前面有的说明它不是标签这些东西的存在仅仅是为了连接标签把标签串联成系统的连接符号帮助我们看的更清晰更有结构和层次感它们是不参与索引的当然符号你可加可不加但是这个符号我建议一定要加上原因会在下面说通过索引体快速提取内容当一切都搭建完毕以后剩下的就是我们提取东西的时候了你可以通过单击标签提取但是我最常用的就是搜索提取想要啥直接搜索如探囊取物一样酸爽比如在我笔记中我搜索写作这个标签你看云笔记会把我打这个标签的所有内容都给我找了出来无论是我个人的随手感想我读书的笔记或者我收集到的任何东西只要它是在这个标签之下瞬间提取如何让提取效率更高我们在实际的提取笔记的场景中经常会遇到一个问题比如一本书的读书笔记就在这一篇笔记中它就可能涵盖无数个知识点即使我用标签定位到了这篇笔记想要找到笔记中的我想要的东西也要翻看好久那么有没有瞬间就能找到我想要的信息的方法呢有的解决方案就是在笔记文件内处处打标签如此可以瞬间找到我们想要的内容比如下图我就在这个笔记的某一处的知识点打上了三个标签当我需要找这三个标签任意一个的时候云笔记会迅速帮我找到它所在的位置并且打上高亮这样整篇文章都变成了我标签系统中的一个个知识点它不再属于原作者而是属于我体系中的一部分这就回答了上面所说的为什么要在标签上加一个原因就在这如果你不加这个识别符号搜索到的东西就会乱七八糟异常痛苦啊这是坑我已经替你们踩过了好了到了这里整篇文章也到了结尾了这个剩下的你只需要在不断的学习过程中去完善和填充这个骨架最终它就会形成一张庞大的知识结构网到时候你就神功大成就可以任意纵横了打造完毕后最重要的事情是什么把笔记软件本身玩熟因为这篇文章不是介绍软件功能的所以几乎没有提到软件本身提供给我们的功能包括日程模板思维导图等等太多太多了你要是懂得笔记软件提供给我们的各种功能那么你一定可以玩的非常这个大家请自行了解网上有的是介绍的我这里不进行赘述了规律性的清理收集箱正如你装修房子一样在装修的时候你可以一次性装修的美轮美奂但是在生活中如果你邋邋遢遢臭袜子脏东西到处扔很快你的新房子也就破旧了想要让他一直焕然一新高效运行你就必须养成干净卫生自律的生活习惯同理我们的笔记系统依然如此我们这次打造了一套超级牛逼的系统但是如果你收集到的资料长期堆积在收集箱中不去清理内容被到处归类那么这套系统很快就会被你搞残所以你的习惯才是保持这套系统高效运转的关键我个人的清理习惯是每个周末拿出固定的时间清理一次收集箱当然如果你比我勤快且时间充裕完全可以一天一清理这样肯定会更好迭代内容删掉过时的东西填充空白的内容刚开始建立起你的外脑的时候不可能一下子就建成类似我外脑那样的丰富肯定会有很多需要完善的地方不断迭代更新这才是你的外脑能持续运转并且越用越顺手的核心最后提醒一句外脑要时常翻阅只有你时常翻阅它它才会内化到你的大脑中文章到这里就结束了下面我们把上面的内容总结一下一什么是知识管理系统知识管理系统就是我们的外脑二为什么要搭建外脑信息量多了我们的大脑是无法记住的我们需要通过别的方式记住它并且在用的时候可以随手提取搭建外脑本身就是把零碎的东西体系化的过程就是搭建知识体系的过程大脑喜欢有结构的东西三如何搭建外脑外脑的构成分成两个部分第一部分为储存体搭建第二部分为索引体搭建搭建储存体什么是储存体储存体就是管理文件夹储存笔记的系统如何搭建储存体以信息流作为底层系统规则化信息需要遵循四大原则即最简层原则目录编码原则统一命名原则标签化原则搭建索引体什么是索引体索引体就是管理标签的系统如何搭建索引体以学习工作生活三分类为底层用一个维度涵盖所有学习的知识标签修身的知识齐家的知识治国的知识平天下的知识如何进一步提升索引效率笔记内处处打标签三保证外脑的高效运转玩转笔记软件功能规律的清理收集箱不断的填充完善迭代更新笔记精进书单推荐如果对该话题感兴趣老常为你精选和整理了主题书单阅读建议按照从初级到高级已分类好想要这个书单请自行移步老常公号常青说回复知识体系拿去不谢最后如果文章对你有启发请在下面的赞赏按钮给我寄来支票你认为对你值多少钱就给我寄多少钱不便赞赏的同学一波三连点赞关注捧个人场就是对我的巨大鼓励和支持你的点赞决定我还要不要写下去没赞我更新的动力不足啊关注我常青和我的专栏第一时间收到干货在留言下评论和我一起探讨这个话题我相信我们可以碰撞出更多火花谢谢你的支持我还有其他好文你也许感兴趣看似厉害的人是怎么分析问题的世界上真的存在记忆宫殿吗常人能掌握吗怎么有效锻炼自己的记忆力学过的东西马上就忘了怎么办常青小白如何养成运动健身的习惯常青超级干货让你快速恢复精力的高效休息法常青快速入眠无痛早起规律作息绝不外传的高效睡眠法常青精力管理提升你颜值让你精力充沛的饮食习惯常青超级干货如何让你的精力充沛到令人发指二常青超级干货如何让你的精力充沛到令人发指常青超级干货分分钟让你成为时间管理高手三常青超级干货分分钟让你成为时间管理高手二常青超级干货分分钟让你成为时间管理高手岁怎么规划自己的人生呢常青如何制定计划为什么你做的计划执行不下去常青目标必达如何做到长期持续稳定的努力常青理解能力差怎么办如何提高理解能力常青拯救懒癌如何提升行动力想到就能做到常青如何成为问题分析高手拥有化腐朽为神奇的力量常青如何练就超强的分析能力一眼看穿事物的本质常青如何快速搭建知识体系常青这或许是最牛逼的做笔记的方法常青如何迅速成为一个领域的专家常青读书不懂这个方法你永远只能被洗脑常青三步让你分钟读完一本书常青招让你快速读懂一本书常青读书步告诉你如何选出有价值的书参考资料信息组织原课程名称文献分类法美国国会图书馆分类法简表美国国会图书馆的计算机应用系统',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-02-05 10:52:46',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><style>
+  /* 导航栏字体大小强制设置 */
+  :root {
+    --nav-font-base: 16px;
+  }
+  
+  html body #page-header #nav {
+    --nav-size-large: calc(var(--nav-font-base) * 1.35);
+    --nav-size-medium: calc(var(--nav-font-base) * 1.1);
+    --nav-size-small: calc(var(--nav-font-base) * 0.95);
+  }
+  
+  /* 主菜单项 */
+  html body #page-header #nav #menus .menus_items .menus_item > a {
+    font-size: var(--nav-size-small) !important;
+  }
+  
+  /* 网站标题 */
+  html body #page-header #nav #blog_name #site-name .title {
+    font-size: var(--nav-size-large) !important;
+  }
+  
+  /* 子菜单项 */
+  html body #page-header #nav .menus_items .menus_item .menus_item_child li a {
+    font-size: var(--nav-size-medium) !important;
+  }
+  
+  /* 搜索按钮 */
+  html body #page-header #nav #search-button {
+    font-size: var(--nav-size-medium) !important;
+  }
+  
+  /* page-name */
+  html body #page-header #nav #page-name {
+    font-size: var(--nav-size-medium) !important;
+  }
+</style>
+<script>console.log('Custom head script');</script><link rel="stylesheet" href="/css/custom.css"><link rel="preconnect" href="https://npm.elemecdn.com" crossorigin><link rel="preconnect" href="https://my-waline-topaz.vercel.app" crossorigin><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="常青" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/loading.gif" data-original="/img/changqing.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">常青</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于我</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 我是谁</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 从哪来</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 到哪去</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 长内容</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 碎碎念</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 碎碎念</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/opensource/"><span> 付费服务</span></a></div></div></div><div id="nav-right"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/img/wx.webp" target="_blank"><img class="post-qr-code-img" alt="微信（推荐）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/wx.webp"/></a><div class="post-qr-code-desc">微信（推荐）</div></li><li class="reward-item"><a href="/img/zfb.webp" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/zfb.webp"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI%E7%B3%BB%E5%88%97/" style="font-size: 1.05rem;">AI系列<sup>2</sup></a><a href="/tags/Markdown/" style="font-size: 1.05rem;">Markdown<sup>1</sup></a><a href="/tags/Typora/" style="font-size: 1.05rem;">Typora<sup>1</sup></a><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">个人管理<sup>12</sup></a><a href="/tags/%E5%81%9A%E4%BA%8B%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">做事方法<sup>3</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">学习方法<sup>6</sup></a><a href="/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">思维方法<sup>5</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E5%8A%9B/" style="font-size: 1.05rem;">效率力<sup>1</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" style="font-size: 1.05rem;">效率工具<sup>2</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">效率方法<sup>10</sup></a><a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">时间管理<sup>3</sup></a><a href="/tags/%E7%90%86%E8%A7%A3%E5%8A%9B/" style="font-size: 1.05rem;">理解力<sup>1</sup></a><a href="/tags/%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92/" style="font-size: 1.05rem;">目标规划<sup>2</sup></a><a href="/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" style="font-size: 1.05rem;">知识体系<sup>1</sup></a><a href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">知识管理<sup>2</sup></a><a href="/tags/%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">研究方法<sup>2</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">笔记方法<sup>2</sup></a><a href="/tags/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">精力管理<sup>6</sup></a><a href="/tags/%E7%BB%9F%E7%AD%B9%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">统筹方法<sup>1</sup></a><a href="/tags/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/" style="font-size: 1.05rem;">自我管理<sup>2</sup></a><a href="/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/" style="font-size: 1.05rem;">记忆力<sup>3</sup></a><a href="/tags/%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95/" style="font-size: 1.05rem;">读书方法<sup>6</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E5%8A%9B/" itemprop="url">学习力</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>笔记方法</span></a><a class="article-meta__tags" href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>知识管理</span></a></span></div></div><h1 class="post-title" itemprop="name headline">手把手教你打造一套最牛的知识笔记管理系统！</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2020-08-21T08:18:00.000Z" title="发表于 2020-08-21 16:18:00">2020-08-21</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-02-05T02:52:46.796Z" title="更新于 2025-02-05 10:52:46">2025-02-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">9.6k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为山东"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>山东</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://www.changqing.fun/posts/1897042030.html"><header><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E5%8A%9B/" itemprop="url">学习力</a><a href="/tags/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/" tabindex="-1" itemprop="url">笔记方法</a><a href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" tabindex="-1" itemprop="url">知识管理</a><h1 id="CrawlerTitle" itemprop="name headline">手把手教你打造一套最牛的知识笔记管理系统！</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">常青</span><time itemprop="dateCreated datePublished" datetime="2020-08-21T08:18:00.000Z" title="发表于 2020-08-21 16:18:00">2020-08-21</time><time itemprop="dateCreated datePublished" datetime="2025-02-05T02:52:46.796Z" title="更新于 2025-02-05 10:52:46">2025-02-05</time></header><h1 id="阅读提示："><a href="#阅读提示：" class="headerlink" title="阅读提示："></a>阅读提示：</h1><p>1.文章大约1W多字，相当长，内容非常硬核，所以读起来不会很轻松，甚至有些烧脑，需要你集中注意力，不建议碎片化时间阅读。</p>
+<p>2.本文是一套完整的知识体系，文章不会上来就直接扔你一个解决方案，而是会从『是什么』和『为什么』开始，告诉你前因后果后，最后才会告诉你怎么去做。</p>
+<p>3.建议先点赞收藏，以供随时翻阅。</p>
+<p><strong>4.新开公号啦~，关注【常青说】，第一时间收到干货！</strong></p>
+<hr>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h1 id="什么是知识管理系统？"><a href="#什么是知识管理系统？" class="headerlink" title="什么是知识管理系统？"></a>什么是知识管理系统？</h1><p>我们先不回答这个问题，直接上个场景~</p>
+<p>假如你床头有10本书，你要在其中找到一本书，你会怎么找？</p>
+<p>你可能会说，扫一眼就找到了啊。</p>
+<p>但是，假如你现在身处世界上最大的图书馆：美国国会图书馆，藏书超2.1亿本，现在你想在里边找到某一本书，请问你如何找？</p>
+<p>一本一本翻吗？累死你，2.1亿这个数字我给大家换算了一下，把2.1亿本书铺起来可绕地球近两圈。</p>
+<p>不仅仅找书，图书馆每天还要在其中处理上千万次的查询、借书、还书、入库………</p>
+<p>仅凭人脑是没有办法处理这么大的信息量的。</p>
+<p>那么图书馆的管理人员，是如何解决这些问题的？</p>
+<p>当让是靠着一套管理系统，让一切规律化，规则化，系统化，把人解放出来。</p>
+<p>如果没有这套管理系统试想怎么样？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-9ed67ad17ea76244da44937419c4be22_r.jpg"></p>
+<p>同理，我们的知识管理系统就相当于这个图书管理系统，而知识就如同这一本本图书，当有了套系统去管理它们以后，我们就相当于拥有了另外的一个大脑，如此就可以把我们大脑不擅长的东西，全部扔给这个外脑，让它帮助我们记忆，整理等等。</p>
+<h1 id="为什么你必须要建立外脑？"><a href="#为什么你必须要建立外脑？" class="headerlink" title="为什么你必须要建立外脑？"></a>为什么你必须要建立外脑？</h1><p><strong>1.大脑是用来思考的，不是用来记忆的。</strong></p>
+<p>记忆，尤其是死记硬背，是最反人性的，进化论告诉我们，大脑只会记住最能帮助我们生存的信息，至于无关紧要的，它为了节省脑力资源会尽可能的忘记它们，同样的大脑也只能处理眼下的小部分信息，而面对大量信息处理的时候，大脑就会罢工。</p>
+<p>我们平常用脑的时候，感觉思绪乱，头昏脑涨，就是因为大脑处理的信息已经超过了它的负荷。<strong>大脑的机制天生就不是为了记忆和处理大量信息而设计的！！！</strong></p>
+<p>但是在现实生活中，我们又需要处理和记住很多信息和知识点，以便使用的时候可以随用随取，那应该怎么办呢？</p>
+<p>当然是建立外脑！！！</p>
+<p><strong>前面说了我们大脑不擅长的记忆和大规模信息管理，但这却是我们外脑所擅长的。我们的大脑会遗忘，但是外脑它永远也不会忘的，你建立的这个外脑就会和你的大脑形成互补，各发挥其所长。</strong></p>
+<p>正如上面的图书管理案例，我们不需要记住每本书的信息，我们想要的时候，只要知道怎么从图书管理系统中找到它们即可。</p>
+<p><strong>所以想发挥大脑真正的威力，就把它从记忆中解放出来，让它去思考，而不是让它去记忆。</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-29787aace0e47868c4b7b7120d11282d_r.jpg"></p>
+<p><strong>有同学看到这里可能会抬杠：有必要弄这么一个外脑吗，我大脑就够用了啊。</strong></p>
+<p>当你只想做个“撸瑟”的时候，觉得这辈子能搬个砖，扛个水泥就够了，那么你就可以离开了，因为你确实没有这个需求。</p>
+<p>但是你想获得不断成长，要获得更强的能力，想要在社会的激烈竞争中有足够的竞争力，你的知识储备必然需要被扩大，这种情况下，你要靠脑子记忆吗？回想你上学的生涯就知道了，那是多么痛的领悟~</p>
+<p>正如上文案例，你只有十本书的时候，当然不需要建立外脑，想要啥扫一眼就够了，但是当你有1000本、10000本、一百万、一个亿本的时候呢？</p>
+<p>以上只是我们必须建立外脑的一个理由之一，除此之外，还有一个更重要的理由。</p>
+<p><strong>2.外脑是为了帮助大脑更好的记住：有逻辑关系的知识，你用的时候才能想起来。</strong></p>
+<p>为什么会这样说呢？</p>
+<p>同样我们先不回答这个问题，给你来个小测试。</p>
+<p>现在思考一下：我让你说水果的名字，你看看你能说出多少个水果。</p>
+<p>你可能会说，这有什么难的：苹果，香蕉，梨、橘子、火龙果、西瓜….</p>
+<p>但是你发现越往下，你思考的时间就越长，越说不出来。</p>
+<p>你可以先暂停阅读试试~</p>
+<p>那么我再换一个问题，请告诉如西红柿炒鸡蛋怎么做？</p>
+<p>你可能想都不用想，直接就可以脱口而出：准备食材–&gt;洗菜切菜—&gt;爆锅开炒—&gt;…..</p>
+<p>为什么会这样？</p>
+<p>因为前者大脑索引的是一个点一个点的信息，后者索引的一整个结构，一整套流程，一整张知识的网。</p>
+<p>你看，点状的东西被大脑索引是很困难的，但是有逻辑有结构的东西则不同，后者一索引就是一大片，一整个体系。当你把点状的知识编织成一张网后，它们就会形成你的思维模型，这样，你用的时候才能想起来。</p>
+<p>很多人抱怨，学过的东西用不出来，反思一下，从小到大，你调用你知识储备的时候是不是都像是上面想水果一样，想到哪是哪。</p>
+<p>你整理过你的知识吗？你的知识是成结构的吗？你脑中有这么一张庞大的知识结构网吗？</p>
+<p>而把知识打入外脑的过程就是在编织你这张网，所以<strong>建立外脑的本质就是体系化你知识的过程！！！</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-61fdb6c02c0328fbbe833308ea6fed17_r.jpg"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pica.zhimg.com/v2-bc1f631278260826362d9232e502c2f0_r.jpg"></p>
+<p><strong>啰里八嗦了那么多，想必你已经知道建立『外脑』的重要性了，那么如何建立外脑呢？</strong></p>
+<h1 id="如何建立外脑？"><a href="#如何建立外脑？" class="headerlink" title="如何建立外脑？"></a>如何建立外脑？</h1><p><strong>整个外脑是由两个系统构成。</strong></p>
+<blockquote>
+<p>第一个是储存笔记的系统。<br>第二个则是索引笔记的系统。</p>
+</blockquote>
+<p>你可以理解成一个放，一个拿，这里知道有这么个东西即可，后文会展开介绍。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic3.zhimg.com/v2-2d8ceffb24a325e9f722bccb17039faa_r.jpg"></p>
+<p><strong>而整个外脑的搭建可以归纳为三步走~</strong></p>
+<blockquote>
+<p>第一步：把收集知识有序的装进去<br>第二步：把知识整理好，设立规则，以供随时提用。<br>第三步：用的时候可以迅速的把需要的知识拿出来。</p>
+</blockquote>
+<p><strong>整篇文章的核心下面一张图就概括了，但是为了让你彻底搞定这件事，我会掰开了揉碎了，一步步手把手带你搭出你的知识管理系统。</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic3.zhimg.com/v2-603637a4580259049585b12756f242e4_r.jpg"></p>
+<p><strong>下面我们先从搭建储存体入手，从零开始搭建整个外脑系统~</strong></p>
+<p><strong>一：选择外脑载体</strong></p>
+<p>一台能正常跑的电脑系统，前提就是主机，显示屏这些硬件载体，你操作系统再牛逼，没有主机你也跑不起来。</p>
+<p>同理，我们的外脑的搭建也是如此，所以建立外脑的第一步，就是找到外脑的载体，即存放我们知识的工具。</p>
+<p>那么市面上提供给我们现成的外脑载体都有哪些呢？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-6645f5973db98026018e81d254a3a5b1_r.jpg"></p>
+<p>太多太多了，主流的有道云笔记、印象笔记、onenote等，都可以作为我们外脑的载体，它们各有优缺点，想详细了解的同学请自行了解，我这里就不展开了，大家凭借喜好选择，总之，都是现成的，任君选择~</p>
+<p>我本人的外脑载体为有道云笔记，下文演示，均以此笔记做案例，其他载体同理~</p>
+<p><strong>当我们确定了大脑的载体以后呢？</strong></p>
+<p>建立几个文件夹后，就开始一顿操作猛如虎，类似下面这样的吗？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-ed08ad30168db5cec861a1804ead7ae7_r.jpg"></p>
+<p><strong>这样的外脑系统有什么问题呢？</strong></p>
+<blockquote>
+<p><strong>① 层次结构混乱：</strong>这样长长的列下来，我不知道你头大没有，别说提取了，我单单看到这一串，头就先大一圈了。</p>
+<p>因为这样混乱的结构，含糊其辞的目录，会让你翻看这些东西的时候，对这种凌乱有一种厌恶感。</p>
+<p><strong>② 提取困难：</strong>混乱的内容，会让真正用的时候找不到，所有的笔记，如果用的时候找不到，或者需要很大的功夫才能找到，那这个外脑系统就没多大意义了，当你笔记内容少的时候，你还能记得那是哪，但是当大到一定量级了呢，你的外脑一定会崩溃。</p>
+<p><strong>③ 知识碎片化</strong>：以上所建立的文件夹，之间都是割裂的，笔记与笔记间连接不起来。</p>
+<p>我们在文章开始的时候就说了，外脑的作用除了帮我们承担记忆的负担，还有一项职能就是辅助我们大脑为我们建立起知识体系，如果你的笔记之间都是一个个散乱的点，那么外脑的意义就要被砍掉一半。</p>
+</blockquote>
+<p><strong>一句话来说，上面的那些都不是一个好的外脑，因为它并没有解决我们为什么建立外脑的本质问题。</strong></p>
+<p><strong>那么什么是好的外脑呢？</strong></p>
+<blockquote>
+<p><strong>1.知识结构体系化：</strong>笔记与笔记间的知识点不分散，不是乱七八糟的，不是碎片化的。<br><strong>2.方便管理：</strong>看到不头大，结构清晰，一目了然。<br><strong>3.提取方便，高效：</strong>最好高效到如同探囊取物，想到就能秒拿到。如果这一点满足不了，找一个想要的信息要半天，那么这套系统就没有多少意义。</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-c35e785dbc0171229ece31b4b655ecf9_r.jpg"></p>
+<p>好了，到了这里你知道了，一个好的外脑的标准，随着而来的一个问题就是，如何才能让你的外脑达成以上标准。</p>
+<p><strong>那么如何让外脑满足以上条件呢？</strong></p>
+<p>正如电脑的windows系统一样，装上了，我们就无需用乱七八糟反人性的dos命令去让计算机工作，所有的一切都有序的跑在这套清爽的图形化系统之上。</p>
+<p><strong>同理想让外脑不乱，你必须部署一套规则化的操作系统，让我们的知识笔记全部跑在这套管理系统之上，保证底盘不乱，根基稳，而不是随性而建。</strong></p>
+<p>所以找到载体之后，不是一顿操作猛如虎，而是要给我们的外脑装上一个类似windows一样的底层系统，而我们这套跑在外脑载体上的系统就是GTD系统，所以我们建立外脑的第二步就是给它装上这套系统。</p>
+<p><strong>二：部署GTD操作系统</strong></p>
+<p><strong>① 什么是GTD系统？</strong></p>
+<p>GTD 的英文全称是：Getting Things Done</p>
+<p>这是由著名的时间管理人戴维・艾伦在他的著作《尽管去做》里提出的一套移动硬盘式的任务管理方法，它的核心精髓是把所有待办任务都从大脑里移出去，清空大脑，用外部的工具去管理任务，让大脑的全部资源都用来思考，而又不会遗漏任何一件事。</p>
+<p>部署了GTD系统在笔记本上，我们就可以借助GTD的工作流，不仅拥有了知识管理系统，而且还把我们的日程管理系统也都囊括其中了，极大幅度的解放了我们的大脑。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-d4da044d35bbf26f6620452c9e6a6d3b_r.jpg"></p>
+<p><strong>② 如何部署GTD系统到笔记本上？</strong></p>
+<p>GTD工作流总共有 5 个步骤：收集、厘清、整理、归档、回顾。</p>
+<p>而把它用到我们的外脑上就变成了信息管理流，同样也是五个步骤：</p>
+<p>GTD信息流：收集箱、等待处理、将来可能、归档资料、专题研究。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-868ef7fb670138e700c8933a7ddf42cf_r.jpg"></p>
+<p>下面分别介绍一下，我们设置的这五个文件夹可以干什么。</p>
+<p><strong>1.收集箱</strong></p>
+<p>这个就相当于你在各大平台点的收藏，比如我们拿手机刷到好文了（比如这篇文章哈~），我们就可以把各大平台的好文，一键集中扔到这个收集箱中。</p>
+<p>这个东西的作用就是负责收集，你不必操心该放到那个分类，所有的好东西，一股脑扔进去就OK了，这样就可以大幅度的解放我们分类归类的时间，等到了一个固定的时间，比如晚上统一处理，这样既不打断我们当前手头的事情，同时又确保了收藏的文件不会乱七八糟，又能让你认真的评估和精读这篇文章，确保进入你笔记的都是精品。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-f1ed10943c450b8f2851275605789d69_r.jpg"></p>
+<p><strong>2.等待处理</strong></p>
+<p>这个文件夹承载我们当天的日程，备忘录，记事本，沉思录、日记本等等。</p>
+<p>你应该有体会，大脑凭记忆力处理这些事情有多坑爹，我们就可以把这些事情交给外脑处理，把日程，待办事项等全部移到这个文件夹里，把这些事情全部从大脑中清理出去，想知道接下来要做什么事情直接来翻这个文件夹，效率高的飞起。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-411cab1d4b722b029103e30c329b85ad_r.jpg"></p>
+<p><strong>3.将来可能</strong></p>
+<p>这里主要承载计划、规划、想法、点子类的东西。</p>
+<p>比如你看到了一个点子，发现了一个项目，你就可以先把它扔到这里，作为你的灵感库。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-4e80d6c4f9e4a3b50d1b1bbb682bf5dd_r.jpg"></p>
+<p><strong>4.归档资料</strong></p>
+<p>这个是我们的知识的大本营，最终所有的信息和笔记都会被归入到这个文件夹中，我们收集到的信息通过整理完毕以后，就放入这里，以供随手复习和使用的时候随时调取。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pica.zhimg.com/v2-145d0a2b2cbb38c9d7ed7fe101d2f1dc_r.jpg"></p>
+<p><strong>5.专题研究</strong></p>
+<p>比如我最近对唱歌比较感兴趣，那么我就可以单独这专题这里建立一个文件夹，专门服务于唱歌，当研究出成果了，再把它归入到归档资料中。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-9064a7d93fb88d3580b2486e3f1c063d_r.jpg"></p>
+<p>当你在你的笔记本上，创建了这个5个文件夹后，你的GTD系统就部署完成了。</p>
+<p>你看，部署了GTD，通过GTD来处理信息后，你的外脑是不是特别有层次感，是不是感觉外脑像是有了灵魂一样~，而不是类似于上面那四个笔记长长的一串。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-d456b432a51f79480296d6c8a9081474_r.jpg"></p>
+<p>那么部署完GTD系统后就完了吗？当然不是。</p>
+<p>完成了最底层系统的搭建，我们就要开始去处理输入进来的笔记了，前面说了，<strong>最终所有的笔记都会被汇总归档到『归档资料』这个文件夹之中，所以我们管理笔记的核心就在此文件夹中</strong>，但是那么多的笔记，怎么去管理啊，还是像上面图中那四个案例一样，列出长长的一串文件夹吗？</p>
+<p>下面我们进入本文的第三个模块，来解决以上问题。</p>
+<h1 id="三：规则化信息——给外脑立结构、给笔记立规矩。"><a href="#三：规则化信息——给外脑立结构、给笔记立规矩。" class="headerlink" title="三：规则化信息——给外脑立结构、给笔记立规矩。"></a>三：规则化信息——给外脑立结构、给笔记立规矩。</h1><p>我们都知道无规矩不成方圆，如果归入进来的笔记没有规则，那就会乱七八糟，完全没效率可言，所以我们必须要给输入进来的笔记进行处理，教给它们规矩，让它们变得清晰有规律，只有这样，你提取它的时候才能迅速找到你想要的。</p>
+<p>但是要设立那些规矩呢？如何设立呢？</p>
+<p>下面提供四大原则，保证让你的笔记规规矩矩的。</p>
+<p><strong>① 最简层原则</strong></p>
+<p><strong>什么是最简层原则？</strong></p>
+<p>所谓最简层原则就是让文件夹尽可能的少，层级尽可能的少，因为只有数量少，你看起来才不会头大，如果还是一层又一层的文件夹，那就和前面你看到的那四张笔记没啥差别了。</p>
+<p><strong>那么如何才能尽可能的少呢？</strong></p>
+<p>当然是找一个可以把所有东西都包括进来的维度，它符合之前文章提到的MECE原则，既涵盖了所有笔记特性，又不遗漏，同时又不冗长。</p>
+<p>我这里就提供给你一个这样的维度，以笔记的 “用处” 这一个维度进行划分，即：『学习』『工作』『生活』。</p>
+<p>你可以随便想，从用处来论，任何笔记都不会逃过这个三个分类的，所以它是符合MECE的，我们就以它作为划分知识的标准，作为『归档资料』的打底文件夹，这样我们就实现了最简层。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pica.zhimg.com/v2-239f74cc80a691b998ea249a278b24c8_r.jpg"></p>
+<p>打底文件夹有了，我们就需要根据自己的需求对文件夹做一些进一步细分，但如果你还是建立一串文件夹，整个笔记体系必然会乱，那么如何管理下一级的文件夹呢？</p>
+<p>这就用到了让你笔记规矩的第二个原则！！！</p>
+<p><strong>② 目录编码原则</strong></p>
+<p><strong>什么是目录编码原则？</strong></p>
+<p>你可以先思考下这个问题，一本书有那么多的知识点，它是怎么排版才让内容清晰一目了然的？</p>
+<p>当然是把图书知识结构整理成目录按照层次编码啊，如下图，这样你看起来结构就会非常清晰，一目了然，同理，我们对文件夹的层级管理，同样采用这种方式，让文件夹的层级与层级之间建立起逻辑关系。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-b02bf1c6a1c11a52cb54cbdc0f290377_r.jpg"></p>
+<p><strong>那如何目录编码呢?</strong></p>
+<p>这里不进行赘述，我给你做了一张图，扫一眼估计你就会了。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-9bcc6a2ebfa8de026d9da30da6f71f3b_r.jpg"></p>
+<p><strong>除了建立起清晰的逻辑层次外，为什么你一定要用目录编码？</strong></p>
+<p>因为有了目录编码后，笔记就能实现自动排序！！</p>
+<p>笔记本一般都是按照名称排序的，比如，数字1在数字2前面，字母A在字母B前面，如此就会非常有序，可参考微信好友目录哈~</p>
+<p>如果你没给它这样规则化命名，则会出现乱序情况，会让笔记看起来乱七八糟的，但如果你设置了编码，就能实现自动排序，非常爽啊~</p>
+<p>所以我们采用图书目录编码，一箭双雕，不仅让结构逻辑层次清晰，而且还能实现自动排序。</p>
+<p>以上我们说了让你笔记规矩的四个原则的前两个原则，有了它们可以让你的笔记结构层次有了一个质的提升，但仅仅是层次清晰还远远不够，想要你的笔记规矩，你还需要第三个原则。</p>
+<p><strong>③ 统一命名原则</strong></p>
+<p><strong>什么是统一命名的原则？</strong></p>
+<p>即：<strong>无论是文件夹还是笔记本身，都要遵循一套标准的命名原则</strong>，只有这样你的笔记才不会乱，切记把笔记命名成这样的无格式笔记，一旦养成这样的习惯，后期会让你有一种想锤死你自己的感觉，相信我~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic3.zhimg.com/v2-474e7891482456b0489c2bfae176ecb4_r.jpg"></p>
+<p><strong>那么用什么标准命名呢？怎么命名？</strong></p>
+<p>下面我给出三个方法，让你解决这个问题。</p>
+<p><strong>1.用黄金圈法则命名文件夹</strong></p>
+<p>你学习的任何一个知识点或专题都逃不过黄金圈的终极三问，即：是什么（what）、为什么（why）、如何做（how）。</p>
+<p>比如你想研究演讲的话题，那么你就可以创建三个文件夹：</p>
+<blockquote>
+<p>1.什么是演讲？（what is 演讲）<br>2.为什么要学习和训练演讲？（why 演讲）<br>3.如何训练演讲？（how to 演讲）</p>
+</blockquote>
+<p>当你创建了这个三个文件夹后，你就可以把演讲相关的所有知识点按照黄金圈分出的三个文件夹分别归属，如此每个文件夹对应啥内容，一眼望穿~</p>
+<p>你看，三个文件夹解决一切，而且看起来是那么的清晰，那么的一目了然~~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-2c1c4f004f745609be9dc06c2619877d_r.jpg"></p>
+<p><strong>2.笔记文件规范化命名</strong></p>
+<p>上面讲的是文件夹的命名方法，这里则是具体到的某个笔记文件命名。</p>
+<p>这里也没有太多可讲的，我给你做了一张图，提供了一个公式，你看一眼就秒懂了。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-5d31ffcbcd95ffbb02e0bf68be63e9d1_r.jpg"></p>
+<p><strong>规则化命名，效果示范~~</strong></p>
+<p>你看，这样的笔记标题命名和上图的两小人那张笔记标题命名，那个看起来让人爽？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-404a995970003259b8ce54e40dada8fb_r.jpg"></p>
+<p><strong>3.意义不明的层，坚决不要。</strong></p>
+<p>还有很多同学会建一个『其他』的文件夹，请问，你这个『其他』是什么？</p>
+<p>你之所以建这个『其他』就是因为，你也搞不通某个笔记文件属于那个类别了，不好分类的所幸一股脑的扔到这里边。</p>
+<p>我告诉你，你在用的时候是根本不会去翻『其他』这个分类的，因为它在你脑中就没有啥概念，你都不知道你放了些啥，应该放些啥，又怎么能指望提取的时候找到呢？</p>
+<p>所以，这种意义不明的层，坚决不要。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic3.zhimg.com/v2-0448e2c0d8f63787a83356320a9c97d6_r.jpg"></p>
+<p>到了这里，你知道了让笔记规矩的三个原则，但是仅仅知道以上三个原则，还不能让它们很规矩，想要他们更规矩一些，你还需要第四个原则。</p>
+<p><strong>④ 标签化原则</strong></p>
+<p>什么是标签化原则？以及为什么要用标签去管理我们的笔记？</p>
+<p>我先不回答这个问题，给你出道小题~</p>
+<p>假如让你给伟人归类，你会把毛爷爷归到哪一类？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic2.zhimg.com/v2-d1c0ed64b779215f73ae749e7be3988f_r.jpg"></p>
+<p>你会把毛爷爷归到政治家？思想家？军事家？……抱歉，这些头衔毛爷爷都占了~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic4.zhimg.com/v2-a41d0065d79c77804d4071df72c1090b_r.jpg"></p>
+<p>你看，你是没有办法把他按单一的维度归类的。</p>
+<p>如果你单一的把毛爷爷归到一个分类中，比如“诗人”，那么搜索其他分类，就找不到毛爷爷了，那你就把毛爷爷给定住在某个分类中了，这样做就是有漏的，同理，我们再来看个案例~</p>
+<p>你会把前两年大火的《战狼2》归到什么分类中？你能对它进行单一归类吗？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-ebbcd779e5cff6b15fb10a8c80d50081_r.jpg"></p>
+<p>我们之前的文章中讲维度的时候就已经说了，<strong>任何一件事物都可以有很多个维度。</strong>如果你把某事物按照一个维度归类，你就相当于把它给定死了，同理我们的知识依旧如此。</p>
+<p><strong>你笔记里的知识，大部分都被你给定死了。</strong></p>
+<p>很多人的笔记之所以没有效率，用的时候找不到，很大的原因就是你把知识给限定死了。</p>
+<p>比如你学到了一个写作技巧 “如何煽情” ，如果你单纯的把这个技巧归入到 “写小说” 这个分类中，只有写小说的时候，你才会想起它，那么这个这个知识点就让你学死了，因为这个技巧完全可能套用到写文案，写报告等等….</p>
+<p><strong>那么如何解决这个问题呢？</strong></p>
+<p>这就回答了上面，为什么要用标签来管理笔记了的问题了。</p>
+<p><strong>打标签就是为解决这个问题设置的，你可以给一个知识点打上无数个标签，当你搜索任何一个标签维度的时候都能够索引到这个知识点。</strong></p>
+<p>正如上面案例中，只要你给毛爷爷打上了标签，无论你搜XX家，都能找到毛爷爷。而《战狼2》中你搜索商业片也能找到它，搜索战争片也能找到它，搜索吴京也能找到它….</p>
+<p><strong>如此，我们就不用纠结于某个知识点具体该归入『储存体』的那个文件夹中，无论是你放到那，只要标签打上了，就不用担心索引问题。</strong></p>
+<p>当你部署了一系列标签的时候，你的知识就活了。</p>
+<blockquote>
+<p>比如：『记忆』这个标签，当你想要这个标签的内容的时候，云笔记就会帮助你，把所有这个被你标记过这个标签的文章给找出来，无论它是你过去的读书笔记，或者是电视剧看到的，演讲听到的，课程中学到的，总之，只要包含这个标签的，一股脑的都会给你抓出来，供你调遣使用……</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-6fe942a6bbe6e5fb12d68c8c552860f9_r.jpg"></p>
+<p>下面给你展示一下，<strong>我是如何给一个课程打标签的！！！</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-dca79d40ae5efc9f578a0203579758c4_r.jpg"></p>
+<p>好了 ，看到这里你可能会说，完成以上部署，笔记的整体效率是高了很多，知识也给盘活了，但是以上知识之间仍然是割裂的，笔记与笔记间仍然形成不了体系，而且笔记量和标签一多，标签本身也就乱了，都不知道标签那个是哪个了，那如何解决这一系列问题呢？</p>
+<p>下面，我们就进入本文的最后一个模块，部署索引体，让你的外脑的效率彻底飞起来~~</p>
+<h1 id="四：部署索引体系统"><a href="#四：部署索引体系统" class="headerlink" title="四：部署索引体系统"></a>四：部署索引体系统</h1><p><strong>1.什么是储存体和索引体系统？</strong></p>
+<p>储存体就是我们以上忙活的，那都是在部署储存体的系统，即在文件夹里的那一套。</p>
+<p>我们前面说了，我们通过标签调取笔记或信息，而索引体系统，就是<strong>把标签与标签之间也建立起逻辑关系，形成体系和结构，最后内化成我们的知识体系。</strong></p>
+<p>一句话解释，储存体用于管理 “文件夹的系统”，而索引体则用于管理 “标签的系统”。</p>
+<p>为了让两者更有辨识度，文件夹系统作为储存体识别符号『C』，标签系统作为索引体，识别符『S』。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-d66c532c3b040fb05ab8e15667425620_r.jpg"></p>
+<p><strong>2.如何搭建索引体？</strong></p>
+<p><strong>① 底层系统搭建</strong></p>
+<p>储存体有GTD作为底层操作系统，那么索引体同样也应该有操作系统作为分类。索引体的分类规则就是我们前文说的『学习』、『工作』、『生活』三个分类，因为你笔记上所有的东西都逃不过这三点，它是符合MECE的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-6229fffd9f92028b1bcf0b07446ab768_r.jpg"></p>
+<p>工作和生活的分类我这里不多介绍，因为这个体系不体系无所谓，大家按照自己的喜好打标签即可。这里主要介绍的是『学习』，因为这才是承载我们知识标签的大本营，我们所有的知识标签都以这个分类为底。</p>
+<p>那么在『学习』这个分类底下，应该怎么去构建知识架构呢？</p>
+<p><strong>② 一个维度分类所有知识标签</strong></p>
+<p>体系的构成一定有底层分类作为支撑的，所以想要把零散的标签，编织成系统就需要对他们进行分类，那么从作用的维度，你会把 “所有的知识” 标签分成哪几类？</p>
+<p>可能每个人都有自己的标准~</p>
+<p>我本人按照和参考了 “儒家的最高理想” 把一个人的一生所有的知识分成了四类：</p>
+<p>即：修身的知识、齐家的知识、治国的知识、平天下的知识~</p>
+<p>哈哈，比较中二，不过我看着很顺眼，这个分类仅供参考，如果你也觉得这个维度不错，可以直接拿去用~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-6d9d01c88f236ee1404af72021b367aa_r.jpg"></p>
+<p>好了，有了这个维度，你就可以把你在储存体里打上的标签，按照这四个维度，分门别类的整理在这里边即可，我截取一段我『索引体』系统中的整理效果，供大家参考~</p>
+<p>你可以看出来，当『索引体』逐渐完善以后，它就是一套完整，清晰的知识体系~~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-bc409efa4b87c92e59894ae58ce91bd8_r.jpg"></p>
+<p><strong>③ 区别符号</strong></p>
+<p>你可能看到索引体中每个对象的前面都有个符号，有的符号是『 # 』有的符号是『 - 』，这是什么意思呢？</p>
+<p>这两个符号是区别符号，前面有『 # 』的，说明它是标签。</p>
+<p>而前面有『 - 』的说明它不是标签，这些东西的存在仅仅是为了连接标签，把标签串联成系统的连接符号，帮助我们看的更清晰，更有结构和层次感，它们是不参与索引的，当然『 - 』符号你可加可不加，但是『 # 』这个符号，我建议一定要加上，原因会在下面说。</p>
+<p><strong>④ 通过『索引体』快速提取内容</strong></p>
+<p>当一切都搭建完毕以后，剩下的就是我们提取东西的时候了，你可以通过单击标签提取，但是我最常用的就是搜索提取，想要啥，直接搜索，如探囊取物一样酸爽。</p>
+<p>比如：在我笔记中，我搜索『写作』这个标签，你看~，云笔记会把我打这个标签的所有内容都给我找了出来。</p>
+<p>无论是我个人的随手感想、我读书的笔记，或者我收集到的任何东西，只要它是在这个标签之下，瞬间提取~~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-beb923709de5b52f0686806a5941dd7d_r.jpg"></p>
+<p><strong>⑤ 如何让提取效率更高？</strong></p>
+<p>我们在实际的提取笔记的场景中，经常会遇到一个问题~</p>
+<p>比如一本书的读书笔记，就在这一篇笔记中，它就可能涵盖无数个知识点，即使我用标签定位到了这篇笔记，想要找到笔记中的我想要的东西，也要翻看好久，那么有没有瞬间就能找到我想要的信息的方法呢？</p>
+<p>有的，<strong>解决方案就是在笔记文件内处处打标签</strong>，如此可以瞬间找到我们想要的内容。</p>
+<p>比如下图，我就在这个笔记的某一处的知识点，打上了三个标签，当我需要找这三个标签任意一个的时候，云笔记会迅速帮我找到它所在的位置，并且打上高亮，这样整篇文章都变成了我标签系统中的一个个知识点，它不再属于原作者，而是属于我体系中的一部分。</p>
+<p>这就回答了上面所说的为什么要在标签上加一个#，原因就在这，如果你不加这个识别符号，搜索到的东西就会乱七八糟，异常痛苦啊，这是坑，我已经替你们踩过了~</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-7c5dee04e92a6cd9d48a74e69c2302f3_r.jpg"></p>
+<p>好了，到了这里，整篇文章也到了结尾了，这个剩下的你只需要在不断的学习过程中去完善和填充这个骨架，最终它就会形成一张庞大的知识结构网，到时候你就神功大成，就可以任意纵横了。</p>
+<h1 id="打造完毕后最重要的事情是什么？"><a href="#打造完毕后最重要的事情是什么？" class="headerlink" title="打造完毕后最重要的事情是什么？"></a>打造完毕后最重要的事情是什么？</h1><p><strong>1.把笔记软件本身玩熟</strong></p>
+<p>因为这篇文章不是介绍软件功能的，所以几乎没有提到软件本身提供给我们的功能，包括日程模板、思维导图、ORC等等太多太多了，你要是懂得笔记软件提供给我们的各种功能，那么你一定可以玩的非常6，这个大家请自行了解，网上有的是介绍的，我这里不进行赘述了。</p>
+<p><strong>2.规律性的清理收集箱</strong></p>
+<p>正如你装修房子一样，在装修的时候你可以一次性装修的美轮美奂，但是在生活中如果你邋邋遢遢，臭袜子，脏东西到处扔，很快你的新房子也就破旧了，想要让他一直焕然一新，高效运行，你就必须养成干净，卫生，自律的生活习惯。</p>
+<p>同理我们的笔记系统依然如此，我们这次打造了一套超级牛逼的系统，但是如果你收集到的资料，长期堆积在收集箱中不去清理，内容被到处归类，那么这套系统很快就会被你搞残。</p>
+<p>所以你的习惯，才是保持这套系统高效运转的关键！！！！！！！！</p>
+<blockquote>
+<p><strong>我个人的清理习惯是，每个周末拿出固定的时间，清理一次收集箱，当然如果你比我勤快，且时间充裕，完全可以一天一清理，这样肯定会更好。</strong></p>
+</blockquote>
+<p><strong>3.迭代内容，删掉过时的东西，填充空白的内容。</strong></p>
+<p>刚开始建立起你的外脑的时候，不可能一下子就建成类似我外脑那样的丰富，肯定会有很多需要完善的地方，不断迭代，更新，这才是你的外脑能持续运转，并且越用越顺手的核心。</p>
+<p>最后提醒一句：<strong>外脑要时常翻阅，只有你时常翻阅它，它才会内化到你的大脑中。</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic1.zhimg.com/v2-4117be7a870167eaa22b530d45da8324_r.jpg"></p>
+<h1 id="文章到这里就结束了，下面我们把上面的内容总结一下！！！"><a href="#文章到这里就结束了，下面我们把上面的内容总结一下！！！" class="headerlink" title="文章到这里就结束了，下面我们把上面的内容总结一下！！！"></a>文章到这里就结束了，下面我们把上面的内容总结一下！！！</h1><p><strong>一：什么是知识管理系统？</strong></p>
+<blockquote>
+<p>知识管理系统就是我们的外脑。</p>
+</blockquote>
+<p><strong>二：为什么要搭建外脑？</strong></p>
+<blockquote>
+<p>1.信息量多了，我们的大脑是无法记住的，我们需要通过别的方式记住它，并且在用的时候，可以随手提取。</p>
+<p>2.搭建外脑，本身就是把零碎的东西体系化的过程，就是搭建知识体系的过程，大脑喜欢有结构的东西。</p>
+</blockquote>
+<p><strong>三：如何搭建外脑?</strong></p>
+<p><strong>外脑的构成分成两个部分，第一部分为储存体搭建，第二部分为索引体搭建。</strong></p>
+<p><strong>①：搭建储存体</strong></p>
+<blockquote>
+<p><strong>什么是储存体？</strong><br>储存体就是管理文件夹、储存笔记的系统</p>
+<p><strong>如何搭建储存体？</strong><br>1.以GTD信息流作为底层系统<br>2.规则化信息需要遵循四大原则，即：<br>（1）最简层原则<br>（2）目录编码原则<br>（3）统一命名原则<br>（4）标签化原则</p>
+</blockquote>
+<p><strong>②：搭建索引体</strong></p>
+<blockquote>
+<p><strong>什么是索引体？</strong><br>索引体就是管理标签的系统。</p>
+<p><strong>如何搭建索引体？</strong><br>1.以『学习』、『工作』、『生活』三分类为底层。<br>2.用一个维度涵盖所有『学习』的知识标签：修身的知识、齐家的知识、治国的知识、平天下的知识。</p>
+<p><strong>如何进一步提升索引效率？</strong><br>笔记内处处打标签</p>
+</blockquote>
+<p><strong>三：保证外脑的高效运转</strong></p>
+<blockquote>
+<p>1.玩转笔记软件功能<br>2.规律的清理收集箱<br>3.不断的填充完善，迭代更新笔记。</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://picx.zhimg.com/v2-30e62eda1a5708b882269c27fe416175_r.jpg"></p>
+<h1 id="精进书单推荐："><a href="#精进书单推荐：" class="headerlink" title="精进书单推荐："></a>精进书单推荐：</h1><p>如果对该话题感兴趣，老常为你精选和整理了主题书单，阅读建议按照从初级到高级已分类好，想要这个书单请自行移步老常公号【常青说】<strong>回复：知识体系</strong>，拿去不谢~</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>如果文章对你有启发，请在下面的赞赏按钮给我寄来支票，你认为对你值多少钱，就给我寄多少钱~ </p>
+<p><strong>不便赞赏的同学，一波三连，点赞，关注、捧个人场，就是对我的巨大鼓励和支持！！！你的点赞决定我还要不要写下去，没赞，我更新的动力不足啊~~</strong></p>
+<p>2.关注我 <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/9a0115dfed946bf2175e59a089763b69">@常青</a> 和 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/rbxxl">我的专栏</a> ， 第一时间收到干货~</p>
+<p>3.在留言下评论和我一起探讨这个话题，我相信，我们可以碰撞出更多火花~</p>
+<p>谢谢你的支持！</p>
+<hr>
+<h1 id="我还有其他好文，你也许感兴趣"><a href="#我还有其他好文，你也许感兴趣" class="headerlink" title="我还有其他好文，你也许感兴趣~"></a>我还有其他好文，你也许感兴趣~</h1><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/304174916/answer/1762095183">看似厉害的人是怎么分析问题的？</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22519910/answer/1702966873">世界上真的存在记忆宫殿吗？常人能掌握吗？</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36473108/answer/1684424101">怎么有效锻炼自己的记忆力？</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27252044/answer/1669139308">学过的东西马上就忘了怎么办？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/340927469">常青：小白如何养成运动健身的习惯？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/338095456">常青：超级干货！让你快速恢复精力的高效休息法！！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/336144077">常青：快速入眠，无痛早起，规律作息！绝不外传的高效睡眠法！！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/334617515">常青：精力管理：提升你颜值，让你精力充沛的饮食习惯！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/330440094">常青：超级干货！如何让你的精力充沛到令人发指！！！（二）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/315489934">常青：超级干货！如何让你的精力充沛到令人发指！！！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/302662359">常青：超级干货！分分钟让你成为时间管理高手！（三）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/299485632">常青：超级干货！分分钟让你成为时间管理高手！（二）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/297860156">常青：超级干货！分分钟让你成为时间管理高手！</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/303781246/answer/1560002946">20-30岁怎么规划自己的人生呢？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/269813305">常青：如何制定计划？为什么你做的计划执行不下去？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/268101028">常青：目标必达！如何做到长期、持续、稳定的努力？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/266789172">常青：理解能力差怎么办，如何提高理解能力？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/262238020">常青：拯救懒癌！如何提升行动力，想到就能做到？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/259827986">常青：如何成为问题分析高手，拥有化腐朽为神奇的力量？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/228029887">常青：如何练就超强的分析能力，一眼看穿事物的本质？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/164401478">常青：如何快速搭建知识体系？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/158405703">常青：这或许是最牛逼的做笔记的方法！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/151657336">常青：如何迅速成为一个领域的专家？</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/150025165">常青：读书不懂这个方法，你永远只能被洗脑！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/148367934">常青：三步让你30分钟，读完一本书！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/146605944">常青：4招让你快速读懂一本书！！</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/144842236">常青：读书：4步告诉你，如何选出有价值的书？</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://pic3.zhimg.com/v2-b30ed3518615dd474eff2d61912913dc_r.jpg"></p>
+<p>参考资料</p>
+<p>“信息组织 I”(原课程名称：文献分类法) ：</p>
+<p>美国国会图书馆分类法简表：</p>
+<p>美国国会图书馆的计算机应用系统：</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/changqing.webp" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/changqing.webp" title="头像" alt="头像"></a><div class="post-copyright__author_name">常青</div><div class="post-copyright__author_desc">元能力 | 思维元能力 | 学习元能力 | 效率元能力 | 老常的人生系统</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://www.changqing.fun/posts/1897042030.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://www.changqing.fun/posts/1897042030.html')">手把手教你打造一套最牛的知识笔记管理系统！</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/wx.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/wx.webp" alt="微信（推荐）"/></a><div class="post-qr-code-desc">微信（推荐）</div></li><li class="reward-item"><a href="/img/zfb.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/zfb.webp" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">微信长按识别二维码</div><div class="reward-dec">因为你的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://www.changqing.fun/posts/1897042030.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=手把手教你打造一套最牛的知识笔记管理系统！&amp;url=https://www.changqing.fun/posts/1897042030.html&amp;pic=https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.changqing.fun" target="_blank">常青</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>笔记方法<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>知识管理<span class="tagsPageCount">2</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/4064148893.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">如何快速搭建知识体系？</div></div></a></div><div class="next-post pull-right"><a href="/posts/2699038967.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_c572a92d-cc4f-4015-a113-fc5df2fc6b7e-20250129152813-31s0s8m.jfif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">如何练就超强的分析能力，一眼看穿事物的本质？</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/posts/3547219690.html" title="这或许是最牛逼的做笔记的方法！"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2020-07-10</div><div class="title">这或许是最牛逼的做笔记的方法！</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/changqing.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/dog.png" alt="status"/></div></div><div class="author-info__description">学习力 | 思维力 | 效率力，致力帮助每一位不甘平庸的人，成为超级个体，把握住人生的大逻辑！！</div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%98%85%E8%AF%BB%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">阅读提示：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-number">2.</span> <span class="toc-text">正文</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">什么是知识管理系统？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BF%85%E9%A1%BB%E8%A6%81%E5%BB%BA%E7%AB%8B%E5%A4%96%E8%84%91%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">为什么你必须要建立外脑？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E5%A4%96%E8%84%91%EF%BC%9F"><span class="toc-number">5.</span> <span class="toc-text">如何建立外脑？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%EF%BC%9A%E8%A7%84%E5%88%99%E5%8C%96%E4%BF%A1%E6%81%AF%E2%80%94%E2%80%94%E7%BB%99%E5%A4%96%E8%84%91%E7%AB%8B%E7%BB%93%E6%9E%84%E3%80%81%E7%BB%99%E7%AC%94%E8%AE%B0%E7%AB%8B%E8%A7%84%E7%9F%A9%E3%80%82"><span class="toc-number">6.</span> <span class="toc-text">三：规则化信息——给外脑立结构、给笔记立规矩。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%EF%BC%9A%E9%83%A8%E7%BD%B2%E7%B4%A2%E5%BC%95%E4%BD%93%E7%B3%BB%E7%BB%9F"><span class="toc-number">7.</span> <span class="toc-text">四：部署索引体系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%93%E9%80%A0%E5%AE%8C%E6%AF%95%E5%90%8E%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">8.</span> <span class="toc-text">打造完毕后最重要的事情是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%88%B0%E8%BF%99%E9%87%8C%E5%B0%B1%E7%BB%93%E6%9D%9F%E4%BA%86%EF%BC%8C%E4%B8%8B%E9%9D%A2%E6%88%91%E4%BB%AC%E6%8A%8A%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93%E4%B8%80%E4%B8%8B%EF%BC%81%EF%BC%81%EF%BC%81"><span class="toc-number">9.</span> <span class="toc-text">文章到这里就结束了，下面我们把上面的内容总结一下！！！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B2%BE%E8%BF%9B%E4%B9%A6%E5%8D%95%E6%8E%A8%E8%8D%90%EF%BC%9A"><span class="toc-number">10.</span> <span class="toc-text">精进书单推荐：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">11.</span> <span class="toc-text">最后</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E8%BF%98%E6%9C%89%E5%85%B6%E4%BB%96%E5%A5%BD%E6%96%87%EF%BC%8C%E4%BD%A0%E4%B9%9F%E8%AE%B8%E6%84%9F%E5%85%B4%E8%B6%A3"><span class="toc-number">12.</span> <span class="toc-text">我还有其他好文，你也许感兴趣~</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2157268841.html" title="如何用艾维做事法，大幅度提升工作效率？"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何用艾维做事法，大幅度提升工作效率？"/></a><div class="content"><a class="title" href="/posts/2157268841.html" title="如何用艾维做事法，大幅度提升工作效率？">如何用艾维做事法，大幅度提升工作效率？</a><time datetime="2025-02-05T02:22:55.348Z" title="发表于 2025-02-05 10:22:55">2025-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4234593951.html" title="万字干货！手把手带你根除手机&amp;短视频成瘾？"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="万字干货！手把手带你根除手机&amp;短视频成瘾？"/></a><div class="content"><a class="title" href="/posts/4234593951.html" title="万字干货！手把手带你根除手机&amp;短视频成瘾？">万字干货！手把手带你根除手机&amp;短视频成瘾？</a><time datetime="2025-02-05T02:01:03.592Z" title="发表于 2025-02-05 10:01:03">2025-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4234593951.html" title="万字干货！手把手带你根除手机&amp;短视频成瘾？"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="万字干货！手把手带你根除手机&amp;短视频成瘾？"/></a><div class="content"><a class="title" href="/posts/4234593951.html" title="万字干货！手把手带你根除手机&amp;短视频成瘾？">万字干货！手把手带你根除手机&amp;短视频成瘾？</a><time datetime="2025-01-17T08:47:29.939Z" title="发表于 2025-01-17 16:47:29">2025-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1773858257.html" title="《AI效率手册：从ChatGTP开启高效能》这一次系统掌握AI技能！"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《AI效率手册：从ChatGTP开启高效能》这一次系统掌握AI技能！"/></a><div class="content"><a class="title" href="/posts/1773858257.html" title="《AI效率手册：从ChatGTP开启高效能》这一次系统掌握AI技能！">《AI效率手册：从ChatGTP开启高效能》这一次系统掌握AI技能！</a><time datetime="2024-10-24T14:04:00.000Z" title="发表于 2024-10-24 22:04:00">2024-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2943316653.html" title="万字干货！ChatGPT 从零完全上手实操指南！"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://543b6c2.webp.li/_4789d469-8183-4003-a702-e9a0fcd97c4d-20250129153048-m1rdv6h.jfif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="万字干货！ChatGPT 从零完全上手实操指南！"/></a><div class="content"><a class="title" href="/posts/2943316653.html" title="万字干货！ChatGPT 从零完全上手实操指南！">万字干货！ChatGPT 从零完全上手实操指南！</a><time datetime="2023-04-22T02:16:00.000Z" title="发表于 2023-04-22 10:16:00">2023-04-22</time></div></div></div></div></div></div></div></main><footer id="footer" style="background: #000000"><div id="footer"><div class="footer-qrcode"><div class="qrcode-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/gzh.webp" alt="QR Code"/><div class="qrcode-text">关注【常青说】公众号，第一时间收到干货的推送，六大免费专栏，持续更新！</div></div><div class="qrcode-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/srh.webp" alt="QR Code"/><div class="qrcode-text">添加老常个人微信号，高频围观老常的日常动态，观察老常日常思考，潜移默化的获得向上的激励力量。</div></div></div><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:changqingsay@gmail.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/" title="微博"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a><a class="deal_link" href="/atom.xml" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/changqing.webp" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://v.douyin.com/" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" rel="noopener" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="RSS" href="/atom.xml">RSS</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链链接" href="/link/">友链链接</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">4</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">关于我</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="我是谁"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/loading.gif" data-original="https://image.anheyu.com/favicon.ico" alt="我是谁"/><span class="back-menu-item-text">我是谁</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于我</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 我是谁</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 从哪来</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><span> 到哪去</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 长内容</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 碎碎念</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 碎碎念</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/opensource/"><span> 付费服务</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AI%E7%B3%BB%E5%88%97/" style="font-size: 0.88rem;">AI系列<sup>2</sup></a><a href="/tags/Markdown/" style="font-size: 0.88rem;">Markdown<sup>1</sup></a><a href="/tags/Typora/" style="font-size: 0.88rem;">Typora<sup>1</sup></a><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">个人管理<sup>12</sup></a><a href="/tags/%E5%81%9A%E4%BA%8B%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">做事方法<sup>3</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">学习方法<sup>6</sup></a><a href="/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">思维方法<sup>5</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E5%8A%9B/" style="font-size: 0.88rem;">效率力<sup>1</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/" style="font-size: 0.88rem;">效率工具<sup>2</sup></a><a href="/tags/%E6%95%88%E7%8E%87%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">效率方法<sup>10</sup></a><a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">时间管理<sup>3</sup></a><a href="/tags/%E7%90%86%E8%A7%A3%E5%8A%9B/" style="font-size: 0.88rem;">理解力<sup>1</sup></a><a href="/tags/%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92/" style="font-size: 0.88rem;">目标规划<sup>2</sup></a><a href="/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" style="font-size: 0.88rem;">知识体系<sup>1</sup></a><a href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">知识管理<sup>2</sup></a><a href="/tags/%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">研究方法<sup>2</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">笔记方法<sup>2</sup></a><a href="/tags/%E7%B2%BE%E5%8A%9B%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">精力管理<sup>6</sup></a><a href="/tags/%E7%BB%9F%E7%AD%B9%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">统筹方法<sup>1</sup></a><a href="/tags/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/" style="font-size: 0.88rem;">自我管理<sup>2</sup></a><a href="/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/" style="font-size: 0.88rem;">记忆力<sup>3</sup></a><a href="/tags/%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95/" style="font-size: 0.88rem;">读书方法<sup>6</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("12/01/2024 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 常青 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  let initFn = window.walineFn || null
+
+  const initWaline = (Fn) => {
+    const waline = Fn(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://my-waline-topaz.vercel.app/',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: false,
+      imageUploader: true,
+    }, {"cdn":"https://npm.elemecdn.com/@waline/client/dist/waline.js","cssUrl":"https://npm.elemecdn.com/@waline/client/dist/waline.css","search":false,"reaction":true,"locale":{"nick":"昵称（必填）","mail":"邮箱（必填）","link":"你的网站（选填）","placeholder":"欢迎在此留言与我互动，老常看见后会很快回复~","requiredMeta":[],"sofa":"评论区空空如也~呜呜呜","anonymous":"匿名的野猫","login":"登录(可选)"},"emoji":["https://github.elemecdn.com/@waline/emojis@1.2.0/tieba/","https://github.elemecdn.com/@waline/emojis@1.2.0/bilibili/","https://github.elemecdn.com/@waline/emojis@1.2.0/qq/","https://github.elemecdn.com/@waline/emojis@1.1.0/weibo"]}))
+
+    const destroyWaline = () => {
+      waline.destroy()
+    }
+
+    anzhiyu.addGlobalFn('pjax', destroyWaline, 'destroyWaline')
+  }
+
+  const loadWaline = async () => {
+    if (initFn) initWaline(initFn)
+    else {
+      await getCSS('https://npm.elemecdn.com/@waline/client/dist/waline.css')
+      if (false) await getCSS('https://cdn.cbd.int/@waline/client@3.1.3/dist/waline-meta.css')
+      const { init } = await import('https://npm.elemecdn.com/@waline/client/dist/waline.js')
+      initFn = init || Waline.init
+      initWaline(initFn)
+      window.walineFn = initFn
+    }
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/js/custom.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>
